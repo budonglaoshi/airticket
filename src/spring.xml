@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans default-autowire="byName"
+	xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:cache="http://www.springframework.org/schema/cache"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache-3.1.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd ">
+
+
+	<context:annotation-config />
+
+	<!-- 数据源 -->
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/airticket" />
+		<property name="username" value="root" />
+		<property name="password" value="allen" />
+	</bean>
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.DerbyDialect
+				</prop>
+			</props>
+		</property>
+
+		<property name="packagesToScan">
+			<value>com.airticket.bean</value>
+		</property>
+	</bean>
+
+
+
+
+	<!-- 事务 策略 -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<tx:advice id="tx" transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="search*" propagation="SUPPORTS" />
+			<tx:method name="*" propagation="REQUIRED" />
+		</tx:attributes>
+	</tx:advice>
+
+
+
+	<aop:config>
+		<aop:pointcut expression="execution(* com.airticket.biz.impl.*.*(..))"
+			id="aop" />
+		<aop:advisor advice-ref="tx" pointcut-ref="aop" />
+	</aop:config>
+
+
+	<!-- 实体配置 -->
+	<!-- 机票查询 -->
+	<bean name="flightSerchAction" class="com.airticket.web.action.FlightSerchAction"></bean>
+	<!-- 新增机票预订 -->
+	<bean name="reserveFlightAction" class="com.airticket.web.action.ReserveFlightAction"></bean>
+	<!-- 订单预订 -->
+	<bean name="orderAction" class="com.airticket.web.action.OrderAction"></bean>
+	<bean name="flightSerchBiz" class="com.airticket.biz.impl.FlightSerchBizImpl"></bean>
+
+
+	<!-- 分组接收器 -->
+	<bean name="groupDataReceiver" class="com.airticket.adapter.hander.GroupDataReceiver"></bean>
+	<!-- 30天最低价接收器 -->
+	<bean name="eachLowerPriceReceiver" class="com.airticket.adapter.hander.EachLowerPriceReceiver"></bean>
+
+
+
+	<bean name="orderBiz" class="com.airticket.biz.impl.OrderBizImpl"></bean>
+
+	<bean name="orderIdDao" class="com.airticket.dao.impl.OrderIdDaoImpl"></bean>
+	<bean name="orderPassengerDao" class="com.airticket.dao.impl.OrderPassengerDaoImpl"></bean>
+	<bean name="orderDao" class="com.airticket.dao.impl.OrderDaoImpl"></bean>
+
+
+
+</beans>
