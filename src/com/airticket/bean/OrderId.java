@@ -19,7 +19,6 @@ import javax.persistence.Table;
 public class OrderId implements java.io.Serializable {
 
 	// Fields
-
 	private String initial;
 	private Integer toplimit;
 	private Integer present;

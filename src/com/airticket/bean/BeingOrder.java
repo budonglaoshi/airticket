@@ -19,53 +19,6 @@ public class BeingOrder extends Order implements Serializable {
 	/** default constructor */
 	public BeingOrder() {}
 
-	/** minimal constructor */
-	public BeingOrder(String orderid, String departCityCode,
-			String arriveCityCode, String departCityName,
-			String arriveCityName, Timestamp takeOffTime, Timestamp arriveTime,
-			String craftType, String airlineCode, String airlineName,
-			Double price, String statusid, String contactName,
-			String mobilePhone) {
-		this.orderid = orderid;
-		this.departCityCode = departCityCode;
-		this.arriveCityCode = arriveCityCode;
-		this.departCityName = departCityName;
-		this.arriveCityName = arriveCityName;
-		this.takeOffTime = takeOffTime;
-		this.arriveTime = arriveTime;
-		this.craftType = craftType;
-		this.airlineCode = airlineCode;
-		this.airlineName = airlineName;
-		this.price = price;
-		this.statusid = statusid;
-		this.contactName = contactName;
-		this.mobilePhone = mobilePhone;
-	}
-
-	/** full constructor */
-	public BeingOrder(String orderid, String departCityCode,
-			String arriveCityCode, String departCityName,
-			String arriveCityName, Timestamp takeOffTime, Timestamp arriveTime,
-			String craftType, String airlineCode, String airlineName,
-			Double price, String statusid, String contactName,
-			String mobilePhone, String contactEmail) {
-		this.orderid = orderid;
-		this.departCityCode = departCityCode;
-		this.arriveCityCode = arriveCityCode;
-		this.departCityName = departCityName;
-		this.arriveCityName = arriveCityName;
-		this.takeOffTime = takeOffTime;
-		this.arriveTime = arriveTime;
-		this.craftType = craftType;
-		this.airlineCode = airlineCode;
-		this.airlineName = airlineName;
-		this.price = price;
-		this.statusid = statusid;
-		this.contactName = contactName;
-		this.mobilePhone = mobilePhone;
-		this.contactEmail = contactEmail;
-	}
-
 	// Property accessors
 	@Id
 	@Column(name = "orderid", unique = true, nullable = false, length = 20)

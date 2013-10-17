@@ -19,7 +19,6 @@ public class SaveOrderInterceptor  implements Interceptor {
 
 	public String intercept(ActionInvocation invocation) throws Exception {
 		
-		
 //		//获取用户ip
 //		String ip = this.getIpAddr(ServletActionContext.getRequest());
 //		
@@ -79,7 +78,6 @@ public class SaveOrderInterceptor  implements Interceptor {
 //			
 //			return Action.SUCCESS;
 //		}
-//		
 //		
 		return null;
 	}

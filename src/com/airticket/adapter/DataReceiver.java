@@ -55,6 +55,8 @@ public abstract class DataReceiver {
 			
 			view.setCraftInfo((CraftInfoEntity) StaticData.loaderDatas.get("CraftInfosList").get(data.getCraftType()));
 			view.setTakeOffTime(SignatureUtils.formatStringToDate(data.getTakeOffTime(),"yyyy-MM-dd'T'hh:mm:ss"));
+
+			view.setArriveTime(SignatureUtils.formatStringToDate(data.getArriveTime(),"yyyy-MM-dd'T'hh:mm:ss"));
 			
 			view.setPrice(data.getPrice());
 			view.setRate(data.getRate());

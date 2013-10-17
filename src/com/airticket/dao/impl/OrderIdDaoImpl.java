@@ -34,5 +34,4 @@ public class OrderIdDaoImpl extends BaseDao implements OrderIdDao {
 		}
 		return orderId;
 	}
-
 }

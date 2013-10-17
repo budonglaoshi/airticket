@@ -128,6 +128,5 @@ public class OrderAction extends ActionSupport {
 	}
 
 	public void setInvoices_json(String invoices_json) {
-		this.invoices_json = invoices_json;
 	}
 }
