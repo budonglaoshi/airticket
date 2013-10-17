@@ -1,0 +1,2716 @@
+<?xml version="1.0"?>
+<Response>
+	<Header ShouldRecordPerformanceTime="False" Timestamp="2013-09-30 09:47:08:48570"
+		ReferenceID="1e351eca-ca86-468f-9045-9658dbf2a72f" RecentlyTime="2013-09-30 09:46:23"
+		AccessCount="3000000" CurrentCount="615" ResetTime="2013-09-30 09:47:23"
+		ResultCode="Success" ResultNo="1301023" ResultMsg="SOA response Body is null. " />
+	<GetCraftInfos>
+		<RecordsCount>298</RecordsCount>
+		<CraftInfosList>
+			<CraftInfoEntity>
+				<CraftType>100</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note>荷兰福克公司研制的双发涡扇式大型支线客机，第一架原型机于1986年11月30日首次试飞</Note>
+				<CraftTypeName>荷兰福克 100</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>130</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note>自 1955 年开始生产以来，是美国最成功、最长寿和生产最多的现役运输机</Note>
+				<CraftTypeName>大力神 C130</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>141</CraftType>
+				<WidthLevel />
+				<MinSeats>88</MinSeats>
+				<MaxSeats>94</MaxSeats>
+				<Note />
+				<CraftTypeName>英国宇航公司146-100客机</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>142</CraftType>
+				<WidthLevel />
+				<MinSeats>93</MinSeats>
+				<MaxSeats>112</MaxSeats>
+				<Note />
+				<CraftTypeName>英国宇航公司146-200客机</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>143</CraftType>
+				<WidthLevel />
+				<MinSeats>75</MinSeats>
+				<MaxSeats>112</MaxSeats>
+				<Note />
+				<CraftTypeName>英国宇航公司146-300客机</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>145</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>50</MinSeats>
+				<MaxSeats>50</MaxSeats>
+				<Note>ERJ-145是巴西航空工业公司研制的双发涡轮螺桨支线客机</Note>
+				<CraftTypeName>ERJ145</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>146</CraftType>
+				<WidthLevel />
+				<MinSeats>167</MinSeats>
+				<MaxSeats>246</MaxSeats>
+				<Note>英国航宇公司研制的一种四发涡扇式短程运输机。可在简陋的、地面设备很少的短跑道机场上起降。原型机于1981年9月3日首次飞行。
+				</Note>
+				<CraftTypeName>英国宇航公司146客机</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>190</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>98</MinSeats>
+				<MaxSeats>98</MaxSeats>
+				<Note />
+				<CraftTypeName>ERJ190</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>191</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>98</MinSeats>
+				<MaxSeats>98</MaxSeats>
+				<Note />
+				<CraftTypeName>ERJ191</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>300</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>206</MinSeats>
+				<MaxSeats>303</MaxSeats>
+				<Note>宽体空客大飞机安全性好，座位非常宽大舒适。</Note>
+				<CraftTypeName>空中客车A300</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>310</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>169</MinSeats>
+				<MaxSeats>246</MaxSeats>
+				<Note>宽体空客大飞机安全性好，在中国有完美的安全记录</Note>
+				<CraftTypeName>空中客车 A310</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>312</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>167</MinSeats>
+				<MaxSeats>222</MaxSeats>
+				<Note>宽体空客大飞机安全性好，1983年3月29日开始使用，在中国有完美的安全记录</Note>
+				<CraftTypeName>空中客车 A310-200</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>313</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>167</MinSeats>
+				<MaxSeats>222</MaxSeats>
+				<Note>空客大飞机安全性好，真正的宽体横截面带来客舱的多适用性和高度的乘客舒适性使A310成为一种多用途的有效的客机</Note>
+				<CraftTypeName>空中客车 A310-300</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>314</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>222</MinSeats>
+				<MaxSeats />
+				<Note>宽体空客大飞机安全性好，在中国有完美的安全记录</Note>
+				<CraftTypeName>空中客车 A310</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>315</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>167</MinSeats>
+				<MaxSeats>246</MaxSeats>
+				<Note>宽体空客大飞机安全性好，在中国有完美的安全记录</Note>
+				<CraftTypeName>空中客车 A310-200</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>318</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats />
+				<MaxSeats />
+				<Note>A320的再次缩短型，空客安全系数较高，2002年1月15日首飞</Note>
+				<CraftTypeName>空中客车 A318</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>319</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>112</MinSeats>
+				<MaxSeats>134</MaxSeats>
+				<Note>A320的缩短型，空客安全系数较高，在世界有完美的安全记录</Note>
+				<CraftTypeName>空中客车 A319</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>31A</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>Unknown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>31L</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>Unknown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>320</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>123</MinSeats>
+				<MaxSeats>180</MaxSeats>
+				<Note>空客320机龄较短，飞机较新，安全系数高。</Note>
+				<CraftTypeName>空中客车 A320</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>321</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>174</MinSeats>
+				<MaxSeats>220</MaxSeats>
+				<Note>A320的最新改进加长版，安全系数较高，机龄2年以内。</Note>
+				<CraftTypeName>空中客车 A321</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>322</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>124</MinSeats>
+				<MaxSeats>180</MaxSeats>
+				<Note>空客安全系数较高，在中国有完美的安全记录</Note>
+				<CraftTypeName>空中客车 A320-200</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>323</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>175</MinSeats>
+				<MaxSeats>175</MaxSeats>
+				<Note />
+				<CraftTypeName>空客320－300</CraftTypeName>
+				<CraftKind>m</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>325</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>180</MinSeats>
+				<MaxSeats>180</MaxSeats>
+				<Note />
+				<CraftTypeName>空客320</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>328</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>32</MinSeats>
+				<MaxSeats>32</MaxSeats>
+				<Note>是德国多尼尔公司在Do.228基础上研制的更大、更先进的涡桨式支线运输机。</Note>
+				<CraftTypeName>美国仙童-多尼尔Do.328Jet</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>32A</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>167</MinSeats>
+				<MaxSeats>167</MaxSeats>
+				<Note />
+				<CraftTypeName>空客321</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>32D</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>123</MinSeats>
+				<MaxSeats>180</MaxSeats>
+				<Note>空客320机龄较短，飞机较新，安全系数高。</Note>
+				<CraftTypeName>空中客车 A320</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>32E</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>123</MinSeats>
+				<MaxSeats>174</MaxSeats>
+				<Note>空客320机龄较短，飞机较新，安全系数高</Note>
+				<CraftTypeName>空中客车 A32E</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>32F</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>154</MinSeats>
+				<MaxSeats>174</MaxSeats>
+				<Note />
+				<CraftTypeName>空中客车320</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>32G</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>180</MinSeats>
+				<MaxSeats>180</MaxSeats>
+				<Note />
+				<CraftTypeName>空中客车320</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>32H</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>150</MinSeats>
+				<MaxSeats>180</MaxSeats>
+				<Note />
+				<CraftTypeName>空中客车－A320</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>32J</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>150</MinSeats>
+				<MaxSeats>180</MaxSeats>
+				<Note />
+				<CraftTypeName>空中客车－A320</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>32K</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>Unknown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>32M</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>162</MinSeats>
+				<MaxSeats>162</MaxSeats>
+				<Note>空客320的一种机型</Note>
+				<CraftTypeName>空客320</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>32N</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>179</MinSeats>
+				<MaxSeats />
+				<Note>宽体空客大飞机安全性好，在中国有完美的安全记录</Note>
+				<CraftTypeName>空中客车 A320-212</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>32P</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>174</MinSeats>
+				<MaxSeats>220</MaxSeats>
+				<Note>空中客车 A320 或 A321</Note>
+				<CraftTypeName>空客320</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>32S</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>112</MinSeats>
+				<MaxSeats>220</MaxSeats>
+				<Note>空客安全系数较高，在中国有完美的安全记录</Note>
+				<CraftTypeName>空中客车 A319/A320/A321</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>32T</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>150</MinSeats>
+				<MaxSeats>180</MaxSeats>
+				<Note />
+				<CraftTypeName>空中客车－A320</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>32V</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>150</MinSeats>
+				<MaxSeats>180</MaxSeats>
+				<Note />
+				<CraftTypeName>空中客车－A320</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>32W</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>155</MinSeats>
+				<MaxSeats>160</MaxSeats>
+				<Note />
+				<CraftTypeName>空客A320系列</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>32Y</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>150</MinSeats>
+				<MaxSeats>180</MaxSeats>
+				<Note />
+				<CraftTypeName>空中客车－A320</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>32Z</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>132</MinSeats>
+				<MaxSeats />
+				<Note>空客安全系数较高，在中国有完美的安全记录</Note>
+				<CraftTypeName>空中客车 A320-200</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>330</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>256</MinSeats>
+				<MaxSeats>412</MaxSeats>
+				<Note>宽体空客大飞机安全性好，1991年10月首次试飞，次年10月开始交付使用。</Note>
+				<CraftTypeName>空中客车 A330</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>331</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>256</MinSeats>
+				<MaxSeats>412</MaxSeats>
+				<Note>空中客车公司</Note>
+				<CraftTypeName>空客330-100</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>332</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>257</MinSeats>
+				<MaxSeats>412</MaxSeats>
+				<Note>宽体空客大飞机安全性好，A330的远程、短机身型。A330-200型较300型机身短5.3米，加大尾翼，加强了机翼结构。1997年8月首飞。
+				</Note>
+				<CraftTypeName>空中客车 A330-200</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>333</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>228</MinSeats>
+				<MaxSeats>420</MaxSeats>
+				<Note>宽体空客大飞机安全性好，空客公司A330/A340家族中载客量最大的一种型号，与A340-300型相比，机身相同，只是发动机只有两台，与发动机相关的系统也有所不同，航程较短。1987年11月2日首飞，1994年6月2日获欧、美适航证书。
+				</Note>
+				<CraftTypeName>空中客车 A330-300</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>334</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>228</MinSeats>
+				<MaxSeats>420</MaxSeats>
+				<Note />
+				<CraftTypeName>空中客车 A330-300</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>335</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>228</MinSeats>
+				<MaxSeats>420</MaxSeats>
+				<Note />
+				<CraftTypeName>空中客车 A330-300</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>33A</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>228</MinSeats>
+				<MaxSeats>420</MaxSeats>
+				<Note>A330-300是A330/A340系列最初的双发成员，它被设计为双发飞机中最好的机型。该机有很高的效率，非常适合于中程以上的延程市场
+				</Note>
+				<CraftTypeName>空客330</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>33B</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>256</MinSeats>
+				<MaxSeats>412</MaxSeats>
+				<Note />
+				<CraftTypeName>空客330</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>33C</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>311</MinSeats>
+				<MaxSeats>311</MaxSeats>
+				<Note />
+				<CraftTypeName>空中客车 A330-300</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>33E</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>200</MinSeats>
+				<MaxSeats>262</MaxSeats>
+				<Note />
+				<CraftTypeName>空中巴士330-300</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>33L</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>228</MinSeats>
+				<MaxSeats>420</MaxSeats>
+				<Note>A330-300是A330/A340系列最初的双发成员，它被设计为双发飞机中最好的机型。该机有很高的效率，非常适合于中程以上的延程市场
+				</Note>
+				<CraftTypeName>空客330</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>33M</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>Unknown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>33Q</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>256</MinSeats>
+				<MaxSeats>412</MaxSeats>
+				<Note />
+				<CraftTypeName>空客330</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>33R</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>256</MinSeats>
+				<MaxSeats>412</MaxSeats>
+				<Note />
+				<CraftTypeName>空客330</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>33V</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>116</MinSeats>
+				<MaxSeats>116</MaxSeats>
+				<Note>头等34个座位，商务82个座位。</Note>
+				<CraftTypeName>空中客车330VIP全商务宽体机</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>340</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>228</MinSeats>
+				<MaxSeats>335</MaxSeats>
+				<Note>宽体空客大飞机安全性好，在中国有完美的安全记录</Note>
+				<CraftTypeName>空中客车 A340</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>342</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>253</MinSeats>
+				<MaxSeats>420</MaxSeats>
+				<Note>宽体空客大飞机安全性好，300的远程型，航程达到13990公里，1992年10月交付使用，在中国有完美的安全记录
+				</Note>
+				<CraftTypeName>空中客车 A340-200</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>343</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>313</MinSeats>
+				<MaxSeats>359</MaxSeats>
+				<Note>宽体空客大飞机安全性好，1991年10月首飞，1993年2月投入使用。</Note>
+				<CraftTypeName>空中客车 A340-300</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>345</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>380</MinSeats>
+				<MaxSeats>419</MaxSeats>
+				<Note />
+				<CraftTypeName>空中客车公司A340-500</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>346</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>345</MinSeats>
+				<MaxSeats>380</MaxSeats>
+				<Note>目前世界上最长的客机，也是340系列唯一一款有五个舱门的机型。</Note>
+				<CraftTypeName>空中客车A340-600</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>34C</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>380</MinSeats>
+				<MaxSeats>419</MaxSeats>
+				<Note />
+				<CraftTypeName>空客340</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>34D</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>380</MinSeats>
+				<MaxSeats>419</MaxSeats>
+				<Note />
+				<CraftTypeName>空客340</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>36S</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>308</MinSeats>
+				<MaxSeats>308</MaxSeats>
+				<Note />
+				<CraftTypeName>空中客车340-600</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>380</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>489</MinSeats>
+				<MaxSeats>525</MaxSeats>
+				<Note />
+				<CraftTypeName>空中客车公司A380-800客机</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>381</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>Unknown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>388</CraftType>
+				<WidthLevel>w</WidthLevel>
+				<MinSeats>489</MinSeats>
+				<MaxSeats>525</MaxSeats>
+				<Note />
+				<CraftTypeName>空中客车A380-800</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>3Q4</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>4G8</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>700</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>Unknown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>703</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>150</MinSeats>
+				<MaxSeats>160</MaxSeats>
+				<Note>波音公司飞机安全保障系统完善</Note>
+				<CraftTypeName>波音 707-320/320B/320C/330B</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>707</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>106</MinSeats>
+				<MaxSeats>123</MaxSeats>
+				<Note>波音公司飞机安全保障系统完善，1954年7月15日首次试飞。也是中国在1973年接收了首架波音飞机。</Note>
+				<CraftTypeName>波音公司707/720B客机</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>70F</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats />
+				<MaxSeats />
+				<Note>波音公司飞机安全保障系统完善，1954年7月15日首次试飞。也是中国在1973年接收了首架波音飞机。</Note>
+				<CraftTypeName>波音 707</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>70M</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats />
+				<MaxSeats />
+				<Note>宽体波音大飞机安全性好，1954年7月15日首次试飞。也是中国在1973年接收了首架波音飞机。</Note>
+				<CraftTypeName>波音 707</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>717</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>106</MinSeats>
+				<MaxSeats>117</MaxSeats>
+				<Note>波音公司飞机安全保障系统完善，是专为短程客运市场而设计的，是目前唯—一种正在生产的新型100座级民航飞机</Note>
+				<CraftTypeName>波音 717-200</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>719</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>Unknown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>720</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>130</MinSeats>
+				<MaxSeats />
+				<Note>宽体波音大飞机安全性好</Note>
+				<CraftTypeName>波音 720/720B</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>721</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>92</MinSeats>
+				<MaxSeats>119</MaxSeats>
+				<Note>波音公司飞机安全保障系统完善，1963年2月第一次试飞</Note>
+				<CraftTypeName>波音 727-100</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>722</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>145</MinSeats>
+				<MaxSeats>167</MaxSeats>
+				<Note>波音公司飞机安全保障系统完善，1972年3月第一次试飞</Note>
+				<CraftTypeName>波音 727-200</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>727</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>92</MinSeats>
+				<MaxSeats>189</MaxSeats>
+				<Note>波音公司飞机安全保障系统完善</Note>
+				<CraftTypeName>波音 727</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>72A</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>126</MinSeats>
+				<MaxSeats>164</MaxSeats>
+				<Note>波音公司飞机安全保障系统完善</Note>
+				<CraftTypeName>波音 727-200</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>72F</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>78</MinSeats>
+				<MaxSeats>190</MaxSeats>
+				<Note>波音公司飞机安全保障系统完善</Note>
+				<CraftTypeName>波音公司727（货机）</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>72M</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>78</MinSeats>
+				<MaxSeats>129</MaxSeats>
+				<Note>波音公司飞机安全保障系统完善，1963年2月第一次试飞</Note>
+				<CraftTypeName>波音 727-100</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>72S</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>126</MinSeats>
+				<MaxSeats>189</MaxSeats>
+				<Note>波音公司飞机安全保障系统完善，1972年3月第一次试飞</Note>
+				<CraftTypeName>波音 727-200/200</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>731</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>92</MinSeats>
+				<MaxSeats>114</MaxSeats>
+				<Note>波音公司飞机安全保障系统完善，737基本型。装两台JT8D-7或-9涡扇发动机，只生产了30架。</Note>
+				<CraftTypeName>波音 737-100</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>732</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>106</MinSeats>
+				<MaxSeats>189</MaxSeats>
+				<Note>波音公司飞机安全保障系统完善，737加长型。在-100的机身上加长1.8米，载客130人；美国空军编号T-43A，被用于导航训练
+				</Note>
+				<CraftTypeName>波音 737-200</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>733</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>102</MinSeats>
+				<MaxSeats>145</MaxSeats>
+				<Note>波音公司飞机安全保障系统完善，-200型的加长型。机身加长2.64米，它是老型号737中销路最好的一种。</Note>
+				<CraftTypeName>波音 737-300</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>734</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>144</MinSeats>
+				<MaxSeats>171</MaxSeats>
+				<Note>波音公司飞机安全保障系统完善，-300的加长型。机身再加长3.05米。</Note>
+				<CraftTypeName>波音 737-400</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>735</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>104</MinSeats>
+				<MaxSeats>132</MaxSeats>
+				<Note>波音公司飞机安全保障系统完善，-300的缩短型。机身缩短6.7米。</Note>
+				<CraftTypeName>波音 737-500</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>736</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>110</MinSeats>
+				<MaxSeats>119</MaxSeats>
+				<Note>波音公司飞机安全保障系统完善，在世界有完美的安全记录</Note>
+				<CraftTypeName>波音 737-600</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>737</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>92</MinSeats>
+				<MaxSeats>189</MaxSeats>
+				<Note>波音公司飞机安全保障系统完善，1967年4月9日原型机首次试飞，2000年1月，波音737成为历史上第一种累计飞行超过1亿小时的飞机。
+				</Note>
+				<CraftTypeName>波音 737</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>738</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>144</MinSeats>
+				<MaxSeats>189</MaxSeats>
+				<Note>波音737-800是最新改进的中型飞机，安全保障系统完善，机龄2年以内。</Note>
+				<CraftTypeName>波音 737-800</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>739</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>170</MinSeats>
+				<MaxSeats>188</MaxSeats>
+				<Note>波音公司</Note>
+				<CraftTypeName>波音737-900</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>73A</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>109</MinSeats>
+				<MaxSeats>148</MaxSeats>
+				<Note>波音公司飞机安全保障系统完善，美国空军编号T-43A，被用于导航训练；</Note>
+				<CraftTypeName>波音 737-200</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>73B</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>102</MinSeats>
+				<MaxSeats>145</MaxSeats>
+				<Note>波音公司</Note>
+				<CraftTypeName>波音737</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>73C</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>100</MinSeats>
+				<MaxSeats>140</MaxSeats>
+				<Note />
+				<CraftTypeName>波音737-300</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>73D</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>120</MinSeats>
+				<MaxSeats>190</MaxSeats>
+				<Note />
+				<CraftTypeName>波音737-300</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>73E</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>92</MinSeats>
+				<MaxSeats>189</MaxSeats>
+				<Note>波音公司飞机安全保障系统完善</Note>
+				<CraftTypeName>波音 737-900ER</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>73F</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats />
+				<MaxSeats />
+				<Note>波音公司飞机安全保障系统完善，它是老型号737中销路最好的一种。</Note>
+				<CraftTypeName>波音 737-200/300</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>73G</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>162</MinSeats>
+				<MaxSeats>189</MaxSeats>
+				<Note>波音公司飞机安全保障系统完善，在世界有完美的安全记录</Note>
+				<CraftTypeName>波音 737-700</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>73H</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>149</MinSeats>
+				<MaxSeats>149</MaxSeats>
+				<Note />
+				<CraftTypeName>波音737-800</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>73I</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>103</MinSeats>
+				<MaxSeats>141</MaxSeats>
+				<Note>波音公司飞机安全保障系统完善</Note>
+				<CraftTypeName>波音 737 230-430</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>73J</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>102</MinSeats>
+				<MaxSeats>145</MaxSeats>
+				<Note>波音公司</Note>
+				<CraftTypeName>波音737</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>73K</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>144</MinSeats>
+				<MaxSeats>189</MaxSeats>
+				<Note />
+				<CraftTypeName>波音737-800</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>73L</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>144</MinSeats>
+				<MaxSeats>159</MaxSeats>
+				<Note />
+				<CraftTypeName>波音737-800</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>73M</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>69</MinSeats>
+				<MaxSeats>79</MaxSeats>
+				<Note>波音公司飞机安全保障系统完善</Note>
+				<CraftTypeName>波音 737-200</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>73N</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>73P</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>121</MinSeats>
+				<MaxSeats>158</MaxSeats>
+				<Note>波音公司飞机安全保障系统完善，是目前世界上最畅销的客机之一。</Note>
+				<CraftTypeName>波音 737</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>73Q</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>103</MinSeats>
+				<MaxSeats>141</MaxSeats>
+				<Note>波音公司飞机安全保障系统完善，是目前世界上最畅销的客机之一。</Note>
+				<CraftTypeName>波音 737</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>73S</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>100</MinSeats>
+				<MaxSeats>130</MaxSeats>
+				<Note>波音公司飞机安全保障系统完善</Note>
+				<CraftTypeName>波音 737-200/200</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>73T</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>73V</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>129</MinSeats>
+				<MaxSeats />
+				<Note>波音公司飞机安全保障系统完善</Note>
+				<CraftTypeName>波音 737</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>73W</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>Unknown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>73X</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats />
+				<MaxSeats />
+				<Note>波音公司飞机安全保障系统完善</Note>
+				<CraftTypeName>波音 737-200</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>73Y</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats />
+				<MaxSeats />
+				<Note>波音公司飞机安全保障系统完善</Note>
+				<CraftTypeName>波音 737-300</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>73Z</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>105</MinSeats>
+				<MaxSeats />
+				<Note>波音公司飞机安全保障系统完善</Note>
+				<CraftTypeName>波音 737-200</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>741</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>393</MinSeats>
+				<MaxSeats>433</MaxSeats>
+				<Note>宽体波音大飞机安全性好，为基本型。1970年1月投入使用。</Note>
+				<CraftTypeName>波音 747-100</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>742</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>351</MinSeats>
+				<MaxSeats>493</MaxSeats>
+				<Note>宽体波音大飞机安全性好，有别称为747B型，100型的改进型,提高了商务载重，增加了航程，1971年2月投入使用。
+				</Note>
+				<CraftTypeName>波音 747-200</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>743</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>375</MinSeats>
+				<MaxSeats>428</MaxSeats>
+				<Note>宽体波音大飞机安全性好，200型的改进型，上层客舱加长7.11米,1983年4月交付使用。瑞士航空公司是首家用户，共生产81架
+				</Note>
+				<CraftTypeName>波音 747-300</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>744</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>362</MinSeats>
+				<MaxSeats>569</MaxSeats>
+				<Note>宽体波音大飞机安全性好，300型的改进型，翼尖加装翼梢小翼，减少阻力，可增大航程3%，1988年开始投入使用。属于第二代B747，为双人机组的B747。1990年5月后唯一生产的747型号。
+				</Note>
+				<CraftTypeName>波音 747-400</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>747</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>244</MinSeats>
+				<MaxSeats>569</MaxSeats>
+				<Note>宽体波音大飞机安全性好，中国在1980年首次接收了此机型。是波音公司生产的四发（动机）远程宽机身运输机。是一种研制与销售都很成功的宽机身客机。
+				</Note>
+				<CraftTypeName>波音 747</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>74A</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>351</MinSeats>
+				<MaxSeats>493</MaxSeats>
+				<Note>波音公司</Note>
+				<CraftTypeName>波音747</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>74C</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>250</MinSeats>
+				<MaxSeats>304</MaxSeats>
+				<Note>宽体波音大飞机安全性好，200型的客货混合两用型</Note>
+				<CraftTypeName>波音 747-200</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>74D</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>250</MinSeats>
+				<MaxSeats>304</MaxSeats>
+				<Note>宽体波音大飞机安全性好，在中国有完美的安全记录</Note>
+				<CraftTypeName>波音 747-300</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>74E</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>287</MinSeats>
+				<MaxSeats>420</MaxSeats>
+				<Note>宽体波音大飞机安全性好，在中国有完美的安全记录</Note>
+				<CraftTypeName>波音 747-400</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>74F</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats />
+				<MaxSeats />
+				<Note>宽体波音大飞机安全性好，在中国有完美的安全记录</Note>
+				<CraftTypeName>波音 747-100/200/400</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>74J</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>351</MinSeats>
+				<MaxSeats>493</MaxSeats>
+				<Note>波音公司</Note>
+				<CraftTypeName>波音747</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>74L</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>244</MinSeats>
+				<MaxSeats>440</MaxSeats>
+				<Note>宽体波音大飞机安全性好，在中国有完美的安全记录</Note>
+				<CraftTypeName>波音 747SP</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>74M</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>238</MinSeats>
+				<MaxSeats>400</MaxSeats>
+				<Note>宽体波音大飞机安全性好，在中国有完美的安全记录</Note>
+				<CraftTypeName>波音 747-200/300/400</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>74R</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>374</MinSeats>
+				<MaxSeats>563</MaxSeats>
+				<Note>宽体波音大飞机安全性好，在中国有完美的安全记录</Note>
+				<CraftTypeName>波音 747SR</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>74W</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>372</MinSeats>
+				<MaxSeats>372</MaxSeats>
+				<Note />
+				<CraftTypeName>波音747-400</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>74X</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats />
+				<MaxSeats />
+				<Note>宽体波音大飞机安全性好，在中国有完美的安全记录，在中国有完美的安全记录</Note>
+				<CraftTypeName>波音 747-100F/200</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>74Y</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats />
+				<MaxSeats />
+				<Note>宽体波音大飞机安全性好，在中国有完美的安全记录</Note>
+				<CraftTypeName>波音 747-400</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>752</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>148</MinSeats>
+				<MaxSeats>239</MaxSeats>
+				<Note>波音公司飞机安全保障系统完善，基本型，1982年1月13日出厂，同年2月19日首飞，最初安装的是罗尔斯-罗伊斯公司RB211发动机
+				</Note>
+				<CraftTypeName>波音 757-200</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>753</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats />
+				<MaxSeats />
+				<Note>波音公司飞机安全保障系统完善，是目前单走道双发客机中最长的，机身长达54.5米。为此还加装了可收放的尾撬，机组可通过机身触地显示器知道机尾是否触地。
+				</Note>
+				<CraftTypeName>波音 757-300</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>757</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>148</MinSeats>
+				<MaxSeats>239</MaxSeats>
+				<Note>波音公司飞机安全保障系统完善，1982年2月第一架波音757飞机首飞</Note>
+				<CraftTypeName>波音 757</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>75A</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>148</MinSeats>
+				<MaxSeats>239</MaxSeats>
+				<Note>波音公司飞机安全保障系统完善</Note>
+				<CraftTypeName>波音757-200</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>75B</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>148</MinSeats>
+				<MaxSeats>239</MaxSeats>
+				<Note>波音公司飞机安全保障系统完善</Note>
+				<CraftTypeName>波音757-200</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>75C</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>148</MinSeats>
+				<MaxSeats>239</MaxSeats>
+				<Note>波音公司飞机安全保障系统完善</Note>
+				<CraftTypeName>波音757-200</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>75F</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats />
+				<MaxSeats />
+				<Note>波音公司飞机安全保障系统完善</Note>
+				<CraftTypeName>波音 757</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>75L</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats />
+				<MaxSeats />
+				<Note>宽体波音大飞机安全性好</Note>
+				<CraftTypeName>波音 757</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>75N</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>235</MinSeats>
+				<MaxSeats />
+				<Note>宽体波音大飞机安全性好</Note>
+				<CraftTypeName>波音 757</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>75T</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>243</MinSeats>
+				<MaxSeats>280</MaxSeats>
+				<Note />
+				<CraftTypeName>波音757-300</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>75W</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>148</MinSeats>
+				<MaxSeats>239</MaxSeats>
+				<Note />
+				<CraftTypeName>波音757-200</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>762</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>161</MinSeats>
+				<MaxSeats>234</MaxSeats>
+				<Note>宽体波音大飞机安全性好，在中国有完美的安全记录</Note>
+				<CraftTypeName>波音 767-200/200ER</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>763</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>203</MinSeats>
+				<MaxSeats>290</MaxSeats>
+				<Note>宽体波音大飞机安全性好，在中国有完美的安全记录</Note>
+				<CraftTypeName>波音 767-300/300ER</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>764</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats />
+				<MaxSeats />
+				<Note>宽体波音大飞机安全性好，在中国有完美的安全记录</Note>
+				<CraftTypeName>波音 767-400</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>767</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>161</MinSeats>
+				<MaxSeats>290</MaxSeats>
+				<Note>宽体波音大飞机安全性好，1981年9月26日第一架波音767飞机首飞</Note>
+				<CraftTypeName>波音 767</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>76A</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>243</MinSeats>
+				<MaxSeats>256</MaxSeats>
+				<Note />
+				<CraftTypeName>波音767</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>76B</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>161</MinSeats>
+				<MaxSeats>290</MaxSeats>
+				<Note>宽体波音大飞机安全性好</Note>
+				<CraftTypeName>波音767-ER</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>76E</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>221</MinSeats>
+				<MaxSeats>237</MaxSeats>
+				<Note />
+				<CraftTypeName>波音767</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>76F</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats />
+				<MaxSeats />
+				<Note>宽体波音大飞机安全性好，在中国有完美的安全记录</Note>
+				<CraftTypeName>波音 767</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>76G</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats />
+				<MaxSeats />
+				<Note>宽体波音大飞机安全性好，300型的加大航程型,在200型基础上增加了中央翼油箱，提高了最大起飞重量,增加了航程，1988年开始投入使用。
+				</Note>
+				<CraftTypeName>波音 767-300ER</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>76L</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats />
+				<MaxSeats />
+				<Note>宽体波音大飞机安全性好，200型的加长型，加强了机身中段和起落架，1986年1月30日首飞,1986年9月开始交付使用。
+				</Note>
+				<CraftTypeName>波音 767-300</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>76P</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>172</MinSeats>
+				<MaxSeats>190</MaxSeats>
+				<Note>宽体波音大飞机安全性好，在中国有完美的安全记录</Note>
+				<CraftTypeName>波音 767</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>76Q</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>219</MinSeats>
+				<MaxSeats />
+				<Note>宽体波音大飞机安全性好，在中国有完美的安全记录</Note>
+				<CraftTypeName>波音 767-200/300</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>76S</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats />
+				<MaxSeats />
+				<Note>宽体波音大飞机安全性好，在中国有完美的安全记录</Note>
+				<CraftTypeName>波音 767-300.</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>76W</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>218</MinSeats>
+				<MaxSeats>358</MaxSeats>
+				<Note />
+				<CraftTypeName>波音767-300</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>76X</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>181</MinSeats>
+				<MaxSeats>245</MaxSeats>
+				<Note />
+				<CraftTypeName>767-200/300</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>76Z</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>222</MinSeats>
+				<MaxSeats />
+				<Note>宽体波音大飞机安全性好，在中国有完美的安全记录</Note>
+				<CraftTypeName>波音 767-300</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>772</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>281</MinSeats>
+				<MaxSeats>440</MaxSeats>
+				<Note>宽体波音大飞机安全性好，在中国有完美的安全记录</Note>
+				<CraftTypeName>波音 777-200</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>773</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>281</MinSeats>
+				<MaxSeats>400</MaxSeats>
+				<Note>宽体波音大飞机安全性好，200型的加长型，是世界上最长的双发喷气客机。</Note>
+				<CraftTypeName>波音 777-300</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>777</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>281</MinSeats>
+				<MaxSeats>440</MaxSeats>
+				<Note>宽体波音大飞机安全性好，在世界有完美的安全记录，1990年10月29日正式起动，1994年6月12日第1架波音777首次试飞
+				</Note>
+				<CraftTypeName>波音 777</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>77A</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>281</MinSeats>
+				<MaxSeats>440</MaxSeats>
+				<Note>波音公司</Note>
+				<CraftTypeName>波音777</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>77B</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>368</MinSeats>
+				<MaxSeats>550</MaxSeats>
+				<Note />
+				<CraftTypeName>波音公司777(混合机)</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>77E</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>77L</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>238</MinSeats>
+				<MaxSeats>440</MaxSeats>
+				<Note>波音公司</Note>
+				<CraftTypeName>波音777-200</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>77M</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>Unknown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>77S</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>238</MinSeats>
+				<MaxSeats>440</MaxSeats>
+				<Note />
+				<CraftTypeName>波音777-200</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>77W</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>342</MinSeats>
+				<MaxSeats>440</MaxSeats>
+				<Note>波音公司</Note>
+				<CraftTypeName>波音777-300</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>787</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>210</MinSeats>
+				<MaxSeats>290</MaxSeats>
+				<Note />
+				<CraftTypeName>波音-787</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>788</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>210</MinSeats>
+				<MaxSeats>250</MaxSeats>
+				<Note />
+				<CraftTypeName>波音787-800</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>800</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>Unknown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>808</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>Unknown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>900</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>Unknown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>A32</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>Unknown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>A33</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>Unknown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>A81</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>50</MinSeats>
+				<MaxSeats>75</MaxSeats>
+				<Note />
+				<CraftTypeName>安东诺夫 安148-100</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>AAI</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>Unknown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>AB2</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>238</MinSeats>
+				<MaxSeats>298</MaxSeats>
+				<Note>宽体空客大飞机安全性好，在中国有完美的安全记录</Note>
+				<CraftTypeName>空中客车 A300-B2</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>AB3</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>181</MinSeats>
+				<MaxSeats>317</MaxSeats>
+				<Note>宽体空客大飞机安全性好，在中国有完美的安全记录</Note>
+				<CraftTypeName>空中客车 A300</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>AB4</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>211</MinSeats>
+				<MaxSeats>317</MaxSeats>
+				<Note>宽体空客大飞机安全性好，在中国有完美的安全记录</Note>
+				<CraftTypeName>空中客车 A300-400</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>AB6</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>207</MinSeats>
+				<MaxSeats>317</MaxSeats>
+				<Note>宽体空客大飞机安全性好，在中国有完美的安全记录</Note>
+				<CraftTypeName>空中客车 A300-600</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>ABA</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>207</MinSeats>
+				<MaxSeats>275</MaxSeats>
+				<Note>宽体空客大飞机安全性好，在中国有完美的安全记录</Note>
+				<CraftTypeName>空中客车 A300</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>ABF</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats />
+				<MaxSeats />
+				<Note>宽体空客大飞机安全性好，在中国有完美的安全记录</Note>
+				<CraftTypeName>空中客车 A300-600R</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>ABM</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>211</MinSeats>
+				<MaxSeats>336</MaxSeats>
+				<Note>宽体空客大飞机安全性好，在中国有完美的安全记录</Note>
+				<CraftTypeName>空中客车 A300-C4</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>ACJ</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>38</MinSeats>
+				<MaxSeats>42</MaxSeats>
+				<Note>全头等舱公务机</Note>
+				<CraftTypeName>空客319公务机 </CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>AN4</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>安 24</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>AR1</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>AR7</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>AR8</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>ARJ</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>AT4</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>42</MinSeats>
+				<MaxSeats>50</MaxSeats>
+				<Note />
+				<CraftTypeName>法国宇航公司42-300/320</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>AT5</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>42</MinSeats>
+				<MaxSeats>74</MaxSeats>
+				<Note />
+				<CraftTypeName>法国宇航公司/ALENIA ATR42-500</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>AT7</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>64</MinSeats>
+				<MaxSeats>74</MaxSeats>
+				<Note>ATR72是法国航宇公司和意大利阿莱尼亚公司联合研制的双发涡桨式支线运输机,是ATR42的加长型飞机</Note>
+				<CraftTypeName>法国宇航公司/ALENIA ATR 72 </CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>ATR</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>64</MinSeats>
+				<MaxSeats>74</MaxSeats>
+				<Note>ATR72是法国航宇公司和意大利阿莱尼亚公司联合研制的双发涡桨式支线运输机,是ATR42的加长型飞机</Note>
+				<CraftTypeName>法国宇航公司/ALENIA ATR42/72 </CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>B72</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>126</MinSeats>
+				<MaxSeats>140</MaxSeats>
+				<Note>波音公司飞机安全保障系统完善</Note>
+				<CraftTypeName>波音 720/720B (707-020/020B)</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>B73</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>B75</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>Unknown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>BAE</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>BE1</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>BE9</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>13</MinSeats>
+				<MaxSeats>15</MaxSeats>
+				<Note />
+				<CraftTypeName>比彻克夫特C99 客机</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>BEH</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>12</MinSeats>
+				<MaxSeats>19</MaxSeats>
+				<Note />
+				<CraftTypeName>比彻克夫特1900D 客机</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>CHG</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>0</MinSeats>
+				<MaxSeats>0</MaxSeats>
+				<Note />
+				<CraftTypeName>机型未定</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>CNA</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>3</MinSeats>
+				<MaxSeats>14</MaxSeats>
+				<Note>(轻型飞机)</Note>
+				<CraftTypeName>赛斯纳</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>CNC</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>10</MinSeats>
+				<MaxSeats>10</MaxSeats>
+				<Note>（单涡轮螺旋桨飞机）</Note>
+				<CraftTypeName>赛斯纳轻型飞机</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>CR1</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>CR2</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>50</MinSeats>
+				<MaxSeats>50</MaxSeats>
+				<Note>CRJ-200加空宇航集团研制的区域喷气式公务机</Note>
+				<CraftTypeName>康纳戴尔 区域喷气机 200</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>CR7</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>70</MinSeats>
+				<MaxSeats>70</MaxSeats>
+				<Note>CRJ-700加空宇航集团研制的区域喷气式公务机</Note>
+				<CraftTypeName>康纳戴尔 区域喷气机 700 </CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>CR9</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>86</MinSeats>
+				<MaxSeats>99</MaxSeats>
+				<Note />
+				<CraftTypeName>康纳戴尔 区域喷气机 900</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>CRA</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>75</MinSeats>
+				<MaxSeats>75</MaxSeats>
+				<Note />
+				<CraftTypeName>康纳戴尔区域喷气机705型</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>CRJ</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>50</MinSeats>
+				<MaxSeats>70</MaxSeats>
+				<Note>CRJ加空宇航集团研制的区域喷气式公务机</Note>
+				<CraftTypeName>康纳戴尔 区域喷气机 </CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>CRK</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>100</MinSeats>
+				<MaxSeats>104</MaxSeats>
+				<Note />
+				<CraftTypeName>康纳戴尔区域喷气机1000</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>CRV</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>D10</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>麦道 DC10</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>D1C</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>Unknown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>D38</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>32</MinSeats>
+				<MaxSeats>32</MaxSeats>
+				<Note>仙童多尼尔公司</Note>
+				<CraftTypeName>多尼尔328</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>D84</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>D94</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>D95</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>D9S</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>DC1</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>DC9</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>DH1</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>37</MinSeats>
+				<MaxSeats>39</MaxSeats>
+				<Note />
+				<CraftTypeName>德.哈维兰公司DHC-8 100冲/BQ</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>DH2</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>37</MinSeats>
+				<MaxSeats>39</MaxSeats>
+				<Note />
+				<CraftTypeName>德.哈维兰公司DHC-8 200冲/BQ</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>DH3</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>50</MinSeats>
+				<MaxSeats>56</MaxSeats>
+				<Note />
+				<CraftTypeName>德.哈维兰公司DHC-8 300冲/BQ</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>DH4</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>DH6</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>冲 6</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>DH8</CraftType>
+				<WidthLevel />
+				<MinSeats>70</MinSeats>
+				<MaxSeats>70</MaxSeats>
+				<Note />
+				<CraftTypeName>冲8-400 70座涡桨</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>DHC</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>DHT</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>14</MinSeats>
+				<MaxSeats>20</MaxSeats>
+				<Note />
+				<CraftTypeName>德.哈维兰公司DHC-6双水獭</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>DON</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>E70</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>70</MinSeats>
+				<MaxSeats>80</MaxSeats>
+				<Note />
+				<CraftTypeName>E170</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>E75</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>78</MinSeats>
+				<MaxSeats>88</MaxSeats>
+				<Note />
+				<CraftTypeName>E175</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>E90</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>90</MinSeats>
+				<MaxSeats>96</MaxSeats>
+				<Note>全称EMB190，中文名叫安博威190，是巴西产的一种中型喷气式飞机</Note>
+				<CraftTypeName>安博威190</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>E95</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>106</MinSeats>
+				<MaxSeats>116</MaxSeats>
+				<Note />
+				<CraftTypeName>巴西航空工业195</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>EM2</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>26</MinSeats>
+				<MaxSeats>35</MaxSeats>
+				<Note />
+				<CraftTypeName>巴西航空工业120</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>EM4</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>EMB</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>24</MinSeats>
+				<MaxSeats>30</MaxSeats>
+				<Note>EMB-110是巴西航空工业公司研制的双发涡轮螺桨支线客机</Note>
+				<CraftTypeName>巴西EMBRAER公司 110BANDEIRANTE </CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>EMJ</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>70</MinSeats>
+				<MaxSeats>110</MaxSeats>
+				<Note />
+				<CraftTypeName>巴西航空工业170</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>EQV</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>0</MinSeats>
+				<MaxSeats>0</MaxSeats>
+				<Note />
+				<CraftTypeName>各种机型</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>ER3</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>37</MinSeats>
+				<MaxSeats>37</MaxSeats>
+				<Note />
+				<CraftTypeName>巴西航空工业RJ135</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>ER4</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>45</MinSeats>
+				<MaxSeats>51</MaxSeats>
+				<Note>EMB-145是巴西航空工业公司最新研制的第一种涡扇式支线客机。它是在EMB-120基础上研制的</Note>
+				<CraftTypeName>巴西EMBRAER公司 RJ145 </CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>ERD</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>40</MinSeats>
+				<MaxSeats>44</MaxSeats>
+				<Note />
+				<CraftTypeName>巴西航空工业RJ140</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>ERJ</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>37</MinSeats>
+				<MaxSeats>50</MaxSeats>
+				<Note />
+				<CraftTypeName>巴西EMBRAER公司RJ135/140/145</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>F50</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>F70</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>72</MinSeats>
+				<MaxSeats>84</MaxSeats>
+				<Note>福克70是荷兰福克公司研制的双发涡桨式支线运输机</Note>
+				<CraftTypeName>福克70 </CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>G08</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>Unknown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>HAW</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>HKG</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>HU1</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>I14</CraftType>
+				<WidthLevel />
+				<MinSeats>60</MinSeats>
+				<MaxSeats>65</MaxSeats>
+				<Note>伊尔-114是俄罗斯伊留申设计局设计的双发涡轮螺桨短程客/货支线运输机</Note>
+				<CraftTypeName>伊柳辛设计集团 IL-114 </CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>I76</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>IL6</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>伊尔 IL-62</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>IL7</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>伊尔 IL-76</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>IL8</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>IL9</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>ILW</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>伊尔 IL-86</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>J41</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>86</MinSeats>
+				<MaxSeats>104</MaxSeats>
+				<Note />
+				<CraftTypeName>英国宇航公司喷气机</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>JET</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>机型未定</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>L96</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>LCH</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>Unknown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>M11</CraftType>
+				<WidthLevel>W</WidthLevel>
+				<MinSeats>243</MinSeats>
+				<MaxSeats>409</MaxSeats>
+				<Note>麦克唐纳·道格拉斯公司针对90年代世界民机市场需要推出的先进中／远程三发大型宽体客机</Note>
+				<CraftTypeName>麦道 MD-11</CraftTypeName>
+				<CraftKind>L</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>M1F</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>麦道 MD-11</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>M1M</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>M23</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>M60</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>M80</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>130</MinSeats>
+				<MaxSeats>172</MaxSeats>
+				<Note />
+				<CraftTypeName>麦道M-80</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>M81</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note>基本生产型，1980年9月开始交付使用。</Note>
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>M82</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note>改进型，安装推力更大的JT8D-217发动机，适于高温高原地区使用，正常情况下可提高商务载重和航程，1981年8月开始交付使用。
+				</Note>
+				<CraftTypeName>麦道 MD-82</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>M83</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>130</MinSeats>
+				<MaxSeats>172</MaxSeats>
+				<Note />
+				<CraftTypeName>麦道M-83</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>M87</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note>机身缩短型，缩短5.35米，典型两级座舱布局可载客130人 ，1987年11月开始交付使用   </Note>
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>M88</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note>为符合达美航空公司的技术要求，特别研制MD88型，与MD82相似，较MD82安装更先进的座舱显示和飞行管理系统，结构上使用更多的复合材料。1988年1月开始交付使用
+					，主要客户当然是达美航空公司。     </Note>
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>M90</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>148</MinSeats>
+				<MaxSeats>169</MaxSeats>
+				<Note>于1989年11月14日开始研制，第一架原型机1993年2月22日首次试飞，1994年11月16日获美国联邦航空局适航证，1995年2月24日交付启动用户达美航空公司使用。
+				</Note>
+				<CraftTypeName>麦道 MD-90</CraftTypeName>
+				<CraftKind>M</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>M91</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>M9D</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>Unknown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>M9W</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>Unknown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>MA6</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>52</MinSeats>
+				<MaxSeats>60</MaxSeats>
+				<Note>新舟60飞机（英文称Modern Ark
+					60，英文缩写为“MA60”）是中国航空工业第一集团公司下属西安飞机工业（集团）公司在运-7短/中程运输机的基础上研制、生产的五十至六十座级双涡轮螺旋桨发动机支线飞机。
+				</Note>
+				<CraftTypeName>新舟60</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>MD9</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>Unknown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>MET</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>美多-23</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>PEK</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>PL2</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>7</MinSeats>
+				<MaxSeats>10</MaxSeats>
+				<Note />
+				<CraftTypeName>派拉特斯 PC12</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>S34</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>SF3</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>瑞典萨伯 340</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>SH6</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>肖特 360</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>SNA</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>SSC</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>T20</CraftType>
+				<WidthLevel>N</WidthLevel>
+				<MinSeats>69</MinSeats>
+				<MaxSeats>74</MaxSeats>
+				<Note />
+				<CraftTypeName>图204/214</CraftTypeName>
+				<CraftKind>S</CraftKind>
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>TU3</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>图 134</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>TU5</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>图 154</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>VG</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>Y72</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>YK2</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>雅克-42</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>YK4</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>YN7</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>运七</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>YN8</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+			<CraftInfoEntity>
+				<CraftType>Z41</CraftType>
+				<WidthLevel />
+				<MinSeats />
+				<MaxSeats />
+				<Note />
+				<CraftTypeName>UNKnown</CraftTypeName>
+				<CraftKind />
+			</CraftInfoEntity>
+		</CraftInfosList>
+	</GetCraftInfos>
+</Response>
