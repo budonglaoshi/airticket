@@ -24,20 +24,21 @@ function PersonView(_id,persons,data) {
 	this.priceSelect = document.createElement("select");
 	this.priceSelect.id = "price" + _id;
 	this.priceSelect.name = "orderPassengers.birthday";
-	this.priceSelect.add(new Option("成人(>12)",data[0]));
-	this.priceSelect.add(new Option("儿童(6-12)",data[1]));
-	this.priceSelect.add(new Option("婴儿(1-5)",data[2]));
+	this.priceSelect.add(new Option("成人",data[0],true));
+	this.priceSelect.add(new Option("儿童",data[1]));
+	this.priceSelect.add(new Option("婴儿",data[2]));
 
 	//
 	this.priceSelect.onchange = function() {
 		persons.get(_id).setPrice(this.value);
+		persons.get(_id).setPassengerType(this.options[this.selectedIndex].text);
 		PersonView.countPrice();
 	}
 
 	this.noTypeSelect = document.createElement("select");
 	this.noTypeSelect.id = "perNoType" + _id;
 	this.noTypeSelect.name = "orderPassengers.cardTypeName";
-	this.noTypeSelect.add(new Option("身份证","身份证"));
+	this.noTypeSelect.add(new Option("身份证","身份证",true));
 	this.noTypeSelect.add(new Option("护照","护照"));
 	this.noTypeSelect.add(new Option("港澳通行证","港澳通行证"));
 	this.noTypeSelect.add(new Option("台胞证","台胞证"));
@@ -91,7 +92,9 @@ function PersonView(_id,persons,data) {
 		//
 		var person = new Person();
 		person.setPrice(this.priceSelect.value);
+		person.setPassengerType(this.priceSelect.options[this.priceSelect.selectedIndex].text);
 		person.setInsurancePrice(this.insurance.value);
+		person.setPerNoType(this.noTypeSelect.value);
 		persons.put(_id, person);
 		PersonView.countPrice();
 

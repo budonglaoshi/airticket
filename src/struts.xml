@@ -14,11 +14,10 @@
 		</interceptors>
 		<!--  -->
 		<global-results>
-			<result name="success">/{1}.jsp</result>
 			<result name="error">/404.jsp</result>
 			<result name="none">/404.jsp</result>
-			<result name="login"></result>
-			<result name="input"></result>
+			<result name="login">/404.jsp</result>
+			<result name="input">/404.jsp</result>
 		</global-results>
 		
 		
@@ -52,7 +51,8 @@
 		</action>
 		
 		<action name="saveorder" class="orderAction" method="save_order">
-			<result name="success">/reserve.jsp</result>
+			<result name="success">/reserve_list.jsp</result>
 		</action>
+		
 	</package>
 </struts>    

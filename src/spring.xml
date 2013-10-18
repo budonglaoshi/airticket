@@ -13,7 +13,7 @@
 	<!-- 数据源 -->
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://localhost:3306/airticket" />
+		<property name="url" value="jdbc:mysql://localhost:3306/airticket?characterEncoding=utf8" />
 		<property name="username" value="root" />
 		<property name="password" value="allen" />
 	</bean>
@@ -29,7 +29,7 @@
 				</prop>
 				<prop key="hibernate.show_sql">true</prop>
 				<prop key="hibernate.format_sql">true</prop>
-				
+				<prop key="hibernate.readOnly">false</prop>
 			</props>
 		</property>
 
@@ -43,7 +43,7 @@
 
 	<!-- 事务 策略 -->
 	<bean id="transactionManager"
-		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager" >
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
 
@@ -57,8 +57,7 @@
 
 
 	<aop:config>
-		<aop:pointcut expression="execution(* com.airticket.biz.impl.*.*(..))"
-			id="aop" />
+		<aop:pointcut expression="execution(* com.airticket.biz.impl.*.*(..))" id="aop" />
 		<aop:advisor advice-ref="tx" pointcut-ref="aop" />
 	</aop:config>
 
@@ -81,11 +80,14 @@
 
 
 	<bean name="orderBiz" class="com.airticket.biz.impl.OrderBizImpl"></bean>
+	<bean name="orderPassengerBiz" class="com.airticket.biz.impl.OrderPassengerBizImpl"></bean>
+	<bean name="orderTraveInvoicesBiz" class="com.airticket.biz.impl.OrderTraveInvoicesBizImpl"></bean>
+	
 
 	<bean name="orderIdDao" class="com.airticket.dao.impl.OrderIdDaoImpl"></bean>
 	<bean name="orderPassengerDao" class="com.airticket.dao.impl.OrderPassengerDaoImpl"></bean>
+	<bean name="orderTravelInvoicesDao" class="com.airticket.dao.impl.OrderTravelInvoicesDaoImpl"></bean>
 	<bean name="orderDao" class="com.airticket.dao.impl.OrderDaoImpl"></bean>
-
 
 
 </beans>

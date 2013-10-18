@@ -13,7 +13,7 @@ public class OrderTravelInvoicesDaoImpl extends BaseDao implements OrderTravelIn
 	 * (non-Javadoc)
 	 * @see com.airticket.dao.OrderTravelInvoicesDao#saveByOrderTravelInvoices(com.airticket.dao.OrderTravelInvoicesDao)
 	 */
-	public Serializable saveByOrderTravelInvoices(OrderTravelInvoicesDao orderTravelInvoices) {
+	public Serializable saveByOrderTravelInvoices(OrderTravelInvoices orderTravelInvoices) {
 		Serializable id = null;
 		try {
 			id = this.insert(orderTravelInvoices);
@@ -29,7 +29,7 @@ public class OrderTravelInvoicesDaoImpl extends BaseDao implements OrderTravelIn
 	 * @see com.airticket.dao.OrderTravelInvoicesDao#deleteByOrderTravelInvoices(com.airticket.dao.OrderTravelInvoicesDao)
 	 */
 	public boolean deleteByOrderTravelInvoices(
-			OrderTravelInvoicesDao orderTravelInvoices) {
+			OrderTravelInvoices orderTravelInvoices) {
 		boolean isOk = false;
 		try {
 			this.delete(orderTravelInvoices);
@@ -46,7 +46,7 @@ public class OrderTravelInvoicesDaoImpl extends BaseDao implements OrderTravelIn
 	 * @see com.airticket.dao.OrderTravelInvoicesDao#updateByOrderTravelInvoices(com.airticket.dao.OrderTravelInvoicesDao)
 	 */
 	public boolean updateByOrderTravelInvoices(
-			OrderTravelInvoicesDao orderTravelInvoices) {
+			OrderTravelInvoices orderTravelInvoices) {
 		boolean isOk = false;
 		try {
 			this.update(orderTravelInvoices);

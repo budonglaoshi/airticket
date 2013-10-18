@@ -11,6 +11,8 @@ import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.GenericGenerator;
+
 /**
  * OrderTravelInvoices entity. @author MyEclipse Persistence Tools
  */
@@ -21,7 +23,7 @@ public class OrderTravelInvoices implements Serializable {
 	// Fields
 
 	//旅游发票ID
-	private String travelinvoicesid;
+	private Integer travelinvoicesid;
 	//收件人
 	private String receiver;
 	//联系方式
@@ -36,10 +38,7 @@ public class OrderTravelInvoices implements Serializable {
 	private String address;
 	//邮政编码
 	private String postCode;
-	//订单ID
-	private String orderid;
-	//联系人ID
-	private String passengerid;
+
 
 	// Constructors
 
@@ -48,17 +47,19 @@ public class OrderTravelInvoices implements Serializable {
 	}
 	
 	// Property accessors
-	@SequenceGenerator(name="generator",sequenceName="seq_OrderTravelInvoices")@Id @GeneratedValue(strategy=SEQUENCE, generator="generator")
-	@Column(name = "travelinvoicesid", unique = true, nullable = false, length = 20)
-	public String getTravelinvoicesid() {
+	@Id
+	@GenericGenerator(name="generator", strategy="increment") 
+	@GeneratedValue(generator="generator")
+    @Column(name="travelinvoicesid", unique=true, nullable=false)
+	public Integer getTravelinvoicesid() {
 		return this.travelinvoicesid;
 	}
 
-	public void setTravelinvoicesid(String travelinvoicesid) {
+	public void setTravelinvoicesid(Integer travelinvoicesid) {
 		this.travelinvoicesid = travelinvoicesid;
 	}
 
-	@Column(name = "receiver", nullable = false, length = 20)
+	@Column(name = "receiver", nullable = false, length = 100)
 	public String getReceiver() {
 		return this.receiver;
 	}
@@ -67,7 +68,7 @@ public class OrderTravelInvoices implements Serializable {
 		this.receiver = receiver;
 	}
 
-	@Column(name = "province", nullable = false, length = 20)
+	@Column(name = "province", nullable = false, length = 100)
 	public String getProvince() {
 		return this.province;
 	}
@@ -76,7 +77,7 @@ public class OrderTravelInvoices implements Serializable {
 		this.province = province;
 	}
 
-	@Column(name = "city", nullable = false, length = 20)
+	@Column(name = "city", nullable = false, length = 100)
 	public String getCity() {
 		return this.city;
 	}
@@ -85,7 +86,7 @@ public class OrderTravelInvoices implements Serializable {
 		this.city = city;
 	}
 
-	@Column(name = "canton", nullable = false, length = 20)
+	@Column(name = "canton", nullable = false, length = 100)
 	public String getCanton() {
 		return this.canton;
 	}
@@ -103,7 +104,7 @@ public class OrderTravelInvoices implements Serializable {
 		this.address = address;
 	}
 
-	@Column(name = "postCode", nullable = false, length = 20)
+	@Column(name = "postCode", nullable = false, length = 100)
 	public String getPostCode() {
 		return this.postCode;
 	}
@@ -112,25 +113,8 @@ public class OrderTravelInvoices implements Serializable {
 		this.postCode = postCode;
 	}
 
-	@Column(name = "orderid", nullable = false, length = 20)
-	public String getOrderid() {
-		return this.orderid;
-	}
 
-	public void setOrderid(String orderid) {
-		this.orderid = orderid;
-	}
-
-	@Column(name = "passengerid", nullable = false, length = 20)
-	public String getPassengerid() {
-		return this.passengerid;
-	}
-
-	public void setPassengerid(String passengerid) {
-		this.passengerid = passengerid;
-	}
-
-	@Column(name = "mobilePhone", nullable = false, length = 20)
+	@Column(name = "mobilePhone", nullable = false, length = 100)
 	public String getMobilePhone() {
 		return mobilePhone;
 	}

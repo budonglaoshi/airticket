@@ -1,4 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
@@ -33,7 +34,7 @@
 	<TABLE height=500 cellSpacing=0 cellPadding=0 width=500 align=center background="/airticket/image/x.gif" border=0>
 		<TBODY>
 			<TR>
-				<TD height=330></TD>
+				<TD height=330>p</TD>
 			</TR>
 			<TR>
 				<TD vAlign=top>
@@ -41,6 +42,7 @@
 						<STRONG>你访问的页面<FONT color=#0099ff>不存在</FONT>或被<FONT
 							color=#ff0000>删除！<BR>
 						</FONT>
+						<s:fielderror></s:fielderror>
 						</STRONG><SPAN class=font12><FONT color=#666666>三秒后自动返回<A
 								href="http://localhost:8888/airticket/">my airticket</A>首页........ </FONT>
 						</SPAN>

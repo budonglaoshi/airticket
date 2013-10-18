@@ -37,6 +37,8 @@ public class SetCharacterEncodingFilter implements Filter { // 要实现Filter�
 			request.setCharacterEncoding("UTF-8");
 			response.setCharacterEncoding("UTF-8");
 		}
+		
+		response.setContentType("text/html;charset=utf-8");
 
 		/*
 		 * 使用doFilter方法调用链中的下一个过滤器或目标资源（servlet或JSP页面）。

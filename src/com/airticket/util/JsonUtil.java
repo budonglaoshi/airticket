@@ -15,6 +15,7 @@ import com.google.gson.JsonParseException;
 import com.google.gson.JsonPrimitive;
 import com.google.gson.JsonSerializationContext;
 import com.google.gson.JsonSerializer;
+import com.google.gson.reflect.TypeToken;
 
 /**
  * json 简单操作的工具类
@@ -66,10 +67,10 @@ public class JsonUtil{
 	 * @param jsonStr
 	 * @return
 	 */
-	public static List<?> jsonToList(String jsonStr){
+	public static List<?> jsonToList(String jsonStr,Type type){
 		List<?> objList=null;
 		if(gson!=null){
-			java.lang.reflect.Type type=new com.google.gson.reflect.TypeToken<List<?>>(){}.getType();
+			//Type type=new TypeToken<List<?>>(){}.getType();
 			objList=gson.fromJson(jsonStr, type);
 		}
 		return objList;
@@ -82,7 +83,7 @@ public class JsonUtil{
 	public static Map<?,?> jsonToMap(String jsonStr){
 		Map<?,?> objMap=null;
 		if(gson!=null){
-			java.lang.reflect.Type type=new com.google.gson.reflect.TypeToken<Map<?,?>>(){}.getType();
+			Type type=new TypeToken<Map<?,?>>(){}.getType();
 			objMap=gson.fromJson(jsonStr, type);
 		}
 		return objMap;

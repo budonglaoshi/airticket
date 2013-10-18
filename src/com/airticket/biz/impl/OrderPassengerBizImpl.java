@@ -1,22 +1,25 @@
 package com.airticket.biz.impl;
 
+import java.io.Serializable;
 import java.util.List;
 
 import com.airticket.bean.OrderPassenger;
 import com.airticket.biz.OrderPassengerBiz;
 import com.airticket.dao.OrderPassengerDao;
-import com.airticket.dao.impl.OrderPassengerDaoImpl;
+
 
 public class OrderPassengerBizImpl implements OrderPassengerBiz {
 	
 	private OrderPassengerDao orderPassengerDao;
 	
-	public boolean saveByOrderPassenger(OrderPassenger orderPassenger) {
-		String str="";
+	
+	public Serializable saveByOrderPassenger(OrderPassenger orderPassenger) {
+		
+		Serializable id = null;
 		if(null!=orderPassenger){
-			str=orderPassengerDao.saveByOrderPassenger(orderPassenger).toString();
+			id =orderPassengerDao.saveByOrderPassenger(orderPassenger);
 		}
-		return ("").equals(str)?false:true;
+		return id;
 	}
 
 	public boolean deleteByOrderPassenger(OrderPassenger orderPassenger) {
@@ -35,12 +38,14 @@ public class OrderPassengerBizImpl implements OrderPassengerBiz {
 		return isok;
 	}
 
+	
 	public List<OrderPassenger> selectByOrderPassenger(OrderPassenger orderPassenger) {
 		return orderPassengerDao.selectByOrderPassenger(orderPassenger);
 	}
 
 	
 	//getter and setter
+
 	public OrderPassengerDao getOrderPassengerDao() {
 		return orderPassengerDao;
 	}

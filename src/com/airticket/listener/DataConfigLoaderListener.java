@@ -11,13 +11,10 @@ import java.util.TimerTask;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
-
 import org.springframework.context.ApplicationContext;
-
 import net.sf.json.JSONArray;
 import net.sf.json.JsonConfig;
 import net.sf.json.processors.JsDateJsonBeanProcessor;
-
 import com.airticket.adapter.DataReceiver;
 import com.airticket.adapter.hander.EachLowerPriceReceiver;
 import com.airticket.bean.RequestView;

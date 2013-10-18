@@ -31,6 +31,7 @@ public interface OrderIdDao {
 	 * @return 主键
 	 */
 	public OrderId selectNewOrderId();
+
 	
 	
 

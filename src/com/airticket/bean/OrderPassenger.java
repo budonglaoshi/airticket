@@ -11,6 +11,8 @@ import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.GenericGenerator;
+
 /**
  * OrderPassenger entity. @author MyEclipse Persistence Tools
  */
@@ -21,11 +23,11 @@ public class OrderPassenger implements Serializable {
 	// Fields
 	
 	//乘机人ID
-	private String passengerid;
+	private Integer passengerid;
 	//乘机人姓名
 	private String passengerName;
 	//乘机人年龄
-	private Integer birthday;
+	private String passengerType;
 	//证件类型
 	private String cardTypeName;
 	//证件号码
@@ -49,13 +51,15 @@ public class OrderPassenger implements Serializable {
 
 
 	// Property accessors
-	@SequenceGenerator(name="generator",sequenceName="seq_OrderPassenger")@Id @GeneratedValue(strategy=SEQUENCE, generator="generator")
-	@Column(name = "passengerid",unique = true, nullable = false, length = 20)
-	public String getPassengerid() {
+	@Id
+	@GenericGenerator(name="generator", strategy="increment") 
+	@GeneratedValue(generator="generator")
+    @Column(name="passengerid", unique=true, nullable=false)
+	public Integer getPassengerid() {
 		return this.passengerid;
 	}
 
-	public void setPassengerid(String passengerid) {
+	public void setPassengerid(Integer passengerid) {
 		this.passengerid = passengerid;
 	}
 
@@ -68,13 +72,13 @@ public class OrderPassenger implements Serializable {
 		this.passengerName = passengerName;
 	}
 
-	@Column(name = "birthday", nullable = false)
-	public Integer getBirthday() {
-		return this.birthday;
+	@Column(name = "passengerType", nullable = false)
+	public String getPassengerType() {
+		return this.passengerType;
 	}
 
-	public void setBirthday(Integer birthday) {
-		this.birthday = birthday;
+	public void setPassengerType(String passengerType) {
+		this.passengerType = passengerType;
 	}
 
 	@Column(name = "cardTypeName", nullable = false, length = 20)
@@ -122,7 +126,7 @@ public class OrderPassenger implements Serializable {
 		this.price = price;
 	}
 
-	@Column(name = "orderid", nullable = false, length = 20)
+	@Column(name = "orderid", nullable = false, length = 100)
 	public String getOrderid() {
 		return this.orderid;
 	}

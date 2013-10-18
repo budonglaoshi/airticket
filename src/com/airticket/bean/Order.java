@@ -2,6 +2,7 @@ package com.airticket.bean;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
+import java.util.Set;
 
 /**
  * 机票订单
@@ -39,4 +40,10 @@ public abstract class Order implements Serializable {
 	public String mobilePhone;
 	//联系人邮箱
 	public String contactEmail;
+	
+	public OrderTravelInvoices orderTravelInvoices;
+	
+	Set<OrderPassenger> orderPassengers;
+	
+	//public Integer travelinvoicesid;
 }

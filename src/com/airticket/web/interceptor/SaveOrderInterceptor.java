@@ -18,7 +18,6 @@ public class SaveOrderInterceptor  implements Interceptor {
 	public void init() {}
 
 	public String intercept(ActionInvocation invocation) throws Exception {
-		
 		return null;
 	}
 

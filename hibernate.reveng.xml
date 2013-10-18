@@ -2,9 +2,15 @@
 <!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
 
 <hibernate-reverse-engineering>
-<table name="test" catalog="trip" class="test.Test">
+	<table name="test" catalog="trip" class="test.Test">
+		<primary-key>
+			<generator class="identity"></generator>
+		</primary-key>
+	</table>
+<table name="p1_order_travelinvoices" catalog="airticket" class="com.airticket.test.OrderTravlinvoices">
 	<primary-key>
-		<generator class="identity"></generator>
+		<generator class="increment"></generator>
+		<key-column name="travelinvoicesid" />
 	</primary-key>
 </table>
 </hibernate-reverse-engineering>

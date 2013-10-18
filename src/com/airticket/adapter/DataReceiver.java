@@ -2,7 +2,6 @@ package com.airticket.adapter;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import com.airticket.bean.ResponseView;
 import com.airticket.listener.loaderdata.AirlineInfoEntity;
 import com.airticket.listener.loaderdata.AirportInfoEntity;
@@ -45,32 +44,23 @@ public abstract class DataReceiver {
 		for (DomesticFlightData data : datas) {
 			ResponseView view = new ResponseView();
 			view.setRecordCount(flightRoute.getRecordCount());
-			
 			view.setAirlineInfo((AirlineInfoEntity) StaticData.loaderDatas.get("AirlineInfosList").get(data.getAirlineCode()));
 			view.setArrAirportInfo((AirportInfoEntity) StaticData.loaderDatas.get("AirportInfosList").get(data.getaPortCode()));
 			view.setDepAirportInfo((AirportInfoEntity) StaticData.loaderDatas.get("AirportInfosList").get(data.getdPortCode()));
-			
 			view.setArrCityDetail((CityDetail) StaticData.loaderDatas.get("CityDetails").get(data.getArriveCityCode()));
 			view.setDepCityDetail((CityDetail) StaticData.loaderDatas.get("CityDetails").get(data.getDepartCityCode()));
-			
 			view.setCraftInfo((CraftInfoEntity) StaticData.loaderDatas.get("CraftInfosList").get(data.getCraftType()));
-			
 			view.setTakeOffTime(SignatureUtils.formatStringToDate(data.getTakeOffTime(),"yyyy-MM-dd'T'hh:mm:ss"));
 			view.setArriveTime(SignatureUtils.formatStringToDate(data.getArriveTime(),"yyyy-MM-dd'T'hh:mm:ss"));
-			
 			view.setPrice(data.getPrice());
 			view.setRate(data.getRate());
 			view.setFlightClass(data.getFlightClass());
 			view.setFlightClassName(StaticData.flightClassNames.get(data.getFlightClass()));
-			
 			view.setQuantity(data.getQuantity());
-
 			view.setFlightNo(data.getFlight());
-			
 			view.setStandardPrice(data.getStandardPrice());
 			view.setChildStandardPrice(data.getChildStandardPrice());
 			view.setBabyStandardPrice(data.getBabyStandardPrice());
-			
 			view.setMealType(data.getMealType());
 
 			if (null != view.getCraftInfo() && null != view.getAirlineInfo()

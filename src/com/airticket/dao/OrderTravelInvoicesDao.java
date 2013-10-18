@@ -16,21 +16,21 @@ public interface OrderTravelInvoicesDao {
 	 * @param order 旅游发票对象 
 	 * @return true/false结果
 	 */
-	public Serializable saveByOrderTravelInvoices(OrderTravelInvoicesDao orderTravelInvoices);
+	public Serializable saveByOrderTravelInvoices(OrderTravelInvoices orderTravelInvoices);
 	
 	/**
 	 * 删除旅游发票
 	 * @param order 旅游发票对象 
 	 * @return true/false结果
 	 */
-	public boolean deleteByOrderTravelInvoices(OrderTravelInvoicesDao orderTravelInvoices);
+	public boolean deleteByOrderTravelInvoices(OrderTravelInvoices orderTravelInvoices);
 	
 	/**
 	 * 修改旅游发票
 	 * @param order 旅游发票对象 
 	 * @return true/false结果
 	 */
-	public boolean updateByOrderTravelInvoices(OrderTravelInvoicesDao orderTravelInvoices);
+	public boolean updateByOrderTravelInvoices(OrderTravelInvoices orderTravelInvoices);
 	
 	/**
 	 * 查询旅游发票

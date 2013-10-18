@@ -1,14 +1,9 @@
 package com.airticket.bean;
 
-import static javax.persistence.GenerationType.SEQUENCE;
-
 import java.io.Serializable;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 /**
@@ -20,14 +15,12 @@ import javax.persistence.Table;
 public class OrderId implements Serializable {
 
 	// Fields
-	private String id;
-	private Integer index;
+	private String head;
+	private Integer order_key;
 	private String initial;
 	private Integer toplimit;
 	private Integer present;
 	
-	private String key;
-
 	// Constructors
 
 	/** default constructor */
@@ -37,7 +30,7 @@ public class OrderId implements Serializable {
 	
 	// Property accessors
 
-	@Column(name = "initial", nullable = false, length = 20)
+	@Column(name = "initial", nullable = false, length = 100)
 	public String getInitial() {
 		return this.initial;
 	}
@@ -64,35 +57,27 @@ public class OrderId implements Serializable {
 	public void setPresent(Integer present) {
 		this.present = present;
 	}
+	
 
-	@SequenceGenerator(name="generator")@Id @GeneratedValue(strategy=SEQUENCE, generator="generator")
-	@Column(name = "id", nullable = false, length = 10)
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
-	}
-
-	@Column(name="index",nullable = false,length = 10)
-	public Integer getIndex() {
-		return index;
+	@Id
+	@Column(name = "order_key", nullable = false)
+	public Integer getOrder_key() {
+		return order_key;
 	}
 
 
-	public void setIndex(Integer index) {
-		this.index = index;
+	public void setOrder_key(Integer order_key) {
+		this.order_key = order_key;
+	}
+
+	@Column(name="head",nullable = false,length = 100)
+	public String getHead() {
+		return head;
 	}
 
 
-	public String getKey() {
-		return key;
-	}
-
-
-	public void setKey(String key) {
-		this.key = key;
+	public void setHead(String head) {
+		this.head = head;
 	}
 
 }

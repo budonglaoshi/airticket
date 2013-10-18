@@ -1,5 +1,5 @@
 #MyEclipse Hibernate Properties
-#Sun Sep 22 11:47:34 CST 2013
+#Fri Oct 18 11:09:39 CST 2013
 sessionFactoryName=
 genBasicCompId=true
 profile=
@@ -18,7 +18,7 @@ genVersionTag=false
 sessionFactoryId=sessionFactory
 basePersistenceClass=
 genAnnotations=true
-reSettingsFile=/tripWeb/hibernate.reveng.xml
+reSettingsFile=/airticketWeb/hibernate.reveng.xml
 configFile=/tripWeb/src/spring.xml
 createConfigFile=false
 addLibs2Classpath=true
