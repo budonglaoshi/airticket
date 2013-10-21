@@ -41,22 +41,13 @@ public class LoadLineCacheInterceptor implements Interceptor {
 				.getParameters();
 		FlightSerchAction serchAction = (FlightSerchAction) invocation
 				.getAction();
-
-		Object departObj = params.get("view.departCity");
-		Object arriveObj = params.get("view.arriveCity");
-		// 提取
-		String departCity = (null != departObj ? ((String[]) departObj)[0]
-				: StaticData.EMPTY);
-		String arriveCity = (null != arriveObj ? ((String[]) arriveObj)[0]
-				: StaticData.EMPTY);
-		// 初始
-		serchAction.setView(new RequestView());
-		serchAction.getView().setDepartCity(departCity);
-		serchAction.getView().setArriveCity(arriveCity);
+		
+		RequestView viewer = serchAction.getView();
+		
 		
 		if (null == MemcachedUtil.get(ip + "lineviews")
-				|| !departCity.equals(MemcachedUtil.get(ip + "linedepart"))
-				|| !arriveCity.equals(MemcachedUtil.get(ip + "linearrive"))) {
+				|| !viewer.getDepartCity().equals(MemcachedUtil.get(ip + "linedepart"))
+				|| !viewer.getArriveCity().equals(MemcachedUtil.get(ip + "linearrive"))) {
 
 			invocation.invoke();
 			// 缓存前先清除以前的缓存

@@ -7,15 +7,10 @@
 			<generator class="identity"></generator>
 		</primary-key>
 	</table>
-	<table name="p1_order_id" catalog="airticket"
-		class="com.airticket.bean.OrderId">
-		<primary-key>
-			<generator class="assigned"></generator>
-		</primary-key>
-	</table>
-<table name="p1_order_passenger" catalog="airticket" class="com.airticket.Passenger">
+<table name="p1_order_travelinvoices" catalog="airticket" class="com.airticket.test.OrderTravlinvoices">
 	<primary-key>
-		<generator class="sequence"></generator>
+		<generator class="increment"></generator>
+		<key-column name="travelinvoicesid" />
 	</primary-key>
 </table>
 </hibernate-reverse-engineering>

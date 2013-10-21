@@ -1,6 +1,5 @@
 #MyEclipse Hibernate Properties
-<<<<<<< HEAD
-#Thu Oct 17 09:52:04 CST 2013
+#Fri Oct 18 11:09:39 CST 2013
 sessionFactoryName=
 genBasicCompId=true
 profile=
@@ -20,28 +19,6 @@ sessionFactoryId=sessionFactory
 basePersistenceClass=
 genAnnotations=true
 reSettingsFile=/airticketWeb/hibernate.reveng.xml
-=======
-#Sun Sep 22 11:47:34 CST 2013
-sessionFactoryName=
-genBasicCompId=true
-profile=
-daoSFId=
-version=3.3
-jndiPath=
-detectM2M=false
-reStrategyClass=
-detectO2O=false
-springDaoFile=
-useJavaTypes=true
-keyGenerator=
-libInstallFolder=WebRoot/WEB-INF/lib
-addLibs2Project=true
-genVersionTag=false
-sessionFactoryId=sessionFactory
-basePersistenceClass=
-genAnnotations=true
-reSettingsFile=/tripWeb/hibernate.reveng.xml
->>>>>>> refs/remotes/origin/master
 configFile=/tripWeb/src/spring.xml
 createConfigFile=false
 addLibs2Classpath=true

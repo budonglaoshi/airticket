@@ -1,5 +1,6 @@
 package com.airticket.biz;
 
+import java.io.Serializable;
 import java.util.List;
 
 import com.airticket.bean.Order;
@@ -11,7 +12,7 @@ public interface OrderBiz{
 	 * @param order 订单信息对象 
 	 * @return true/false结果
 	 */
-	public boolean saveByOrder(Order order);
+	public Serializable saveByOrder(Order order);
 	
 	/**
 	 * 删除订单信息

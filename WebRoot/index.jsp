@@ -35,17 +35,27 @@ $(document).ready(function() {
 				price[i] = json[i].price;
 				depaerAPortName = json[i].depCityDetail.cityName;
 				arriveAPortName = json[i].arrCityDetail.cityName;
-				takeOffTime[i] = json[i].takeOffTime.month+"-"+json[i].takeOffTime.day;
+				var time = json[i].takeOffTime.split("-");
+				
+				takeOffTime[i] = time[1]+"-"+time[2];
+				
+				
 			}
 			loadLine(depaerAPortName,arriveAPortName,price,takeOffTime);
 		});
 	}
 	
+	
+	
 	//加载曲线图
 	LineGraph(dcity,acity);
 
+	function loadLink(){
+		
+	}
+	
 	//更换往返地址
-	$("#chGo").click(function(){
+	$(".chGo").click(function(){
 		var dc = $("#departCity").val();
 		var ac = $("#arriveCity").val();
 		$("#departCity").val(ac);
@@ -53,7 +63,25 @@ $(document).ready(function() {
 		$("#serchform").submit();
 	});
 	
-	
+	$(".goOrder").click(function(){
+		var index = $(this).attr("index");
+		var dcity = $("#dcity"+index).html(); 
+		var acity = $("#acity"+index).html(); 
+		var price = $("#price"+index).html(); 
+		var ddate = $("#ddate"+index).html();
+		var fno = $("#fno"+index).html(); 
+		var ftype = $("#ftype"+index).html();
+		var jsondata = "{";
+			jsondata+="\"view.departCity\":\""+dcity+"\",";
+			jsondata+="\"view.arriveCity\":\""+acity+"\",";
+			jsondata+="\"view.takeOffTime\":\""+ddate+"\",";
+			jsondata+="\"view.price\":\""+price+"\",";
+			jsondata+="\"view.flightClass\":\""+ftype+"\",";
+			jsondata+="\"view.flightNo\":\""+fno+"\"";
+		jsondata+="}";
+		
+		location.replace("reserve.jsp?params="+jsondata);
+	});
 	
 	
 	
@@ -89,70 +117,59 @@ a {
 				<s:elseif test='%{#type=="D"}'></s:elseif>
 				<s:else>checked='checked'</s:else> /><span>单程</span> <label>出发城市</label><input
 				id="departCity" name="view.departCity"
-				value="BJS" /> <label>出发时间</label><input
+				value="<s:property value="#depart"/>" /> <label>出发时间</label><input
 				id="departDate" name="view.departDate"
-				value="2013-11-01" /><br /> <input
+				value="<s:property value="#departTime"/>" /><br /> <input
 				name="view.searchType" type="radio" value="D"
 				<s:if test='%{#type=="D"}'>checked='checked'</s:if> /><span>往返</span>
 			<label>到达城市</label><input id="arriveCity" name="view.arriveCity"
-				value="KMG" /> <label id="arrLabel">返程时间</label><input
+				value="<s:property value="#arrive"/>" /> <label id="arrLabel">返程时间</label><input
 				id="returnDate" name="view.returnDate"
 				value="<s:property value="#arriveTime"/>" /><br /> <input
 				id="menuSubmit" type="hidden" name="view.menuSubmit" /> <br /> <input
 				type="submit" value="submit" />
 		</form>
-
-		<div style="float: right;">
-			<a href="reserve.jsp">我的订单</a>
-		</div>
 		<s:if test="#viewers!=null">
 			<br />
 			<br />
 			<br />
-			<s:iterator var="viewer" value="#viewers">
+			<s:iterator var="viewer" value="#viewers" status="index">
 				<div style="border: 1px solid #dedede;height: 150px;">
 					<s:property value="#viewer.depCityDetail.cityName" />
+					<label style="display: none;" id="dcity<s:property value="#index.index"/>"><s:property value="#viewer.depCityDetail.cityCode" /></label>
 					-
 					<s:property value="#viewer.arrCityDetail.cityName" />
+					<label style="display: none;" id="acity<s:property value="#index.index"/>"><s:property value="#viewer.arrCityDetail.cityCode" /></label>
 					<br />
 					<s:property value="#viewer.depAirportInfo.airPortName" />
 					-
 					<s:property value="#viewer.arrAirportInfo.airPortName" />
 					&nbsp;&nbsp;
-					<s:property value="#viewer.price" />
+					<label id="price<s:property value="#index.index"/>"><s:property value="#viewer.price" /></label>
 					(
 					<s:property value="#viewer.rate" />
 					) 起飞时间：
-					<s:date name="#viewer.takeOffTime" format="yyyy-MM-dd hh:mm:ss" />
+					<label id="ddate<s:property value="#index.index"/>"><s:date name="#viewer.takeOffTime" format="yyyy-MM-dd hh:mm:ss" /></label>
 					还剩
 					<s:property value="#viewer.quantity" />
 					张票<br /> 航班号：
-					<s:property value="#viewer.flightNo" />
+					<label id="fno<s:property value="#index.index"/>"><s:property value="#viewer.flightNo" /></label>
 					<br /> 航班类型：
 					<s:property value="#viewer.craftInfo.craftType" />
 					<br />
 					<s:property value="#viewer.flightClassName" />
+					<label id="ftype<s:property value="#index.index"/>"><s:property value="#viewer.flightClass" /></label>
 					<br />
 					<s:property value="#viewer.airlineInfo.airLineName" />
 					<br />
 
 					<s:if test='%{#type eq "S"}'>
-						<a href="reserve.jsp?view.flightNo=<s:property value="#viewer.flightNo"/>&&
-					view.price=<s:property value="#viewer.price"/>&&
-					view.flightClass=<s:property value="#viewer.flightClass"/>&&
-					view.departCity=<s:property value="#viewer.depCityDetail.cityCode"/>&&
-					view.arriveCity=<s:property value="#viewer.arrCityDetail.cityCode"/>&&
-					view.takeOffTime=<s:date name="#viewer.takeOffTime" format="yyyy-MM-dd hh:mm:ss" />">预定</a>
+						<a class="goOrder" href="javascript:void(0);" index="<s:property value="#index.index"/>">预定</a>
 					</s:if>
 					<s:elseif test='%{#type eq "D"}'>
-						<a id="chGo" href="reserve.jsp?
-							view.flightNo=<s:property value="#viewer.flightNo"/>&&
-							view.price=<s:property value="#viewer.price"/>&&
-							view.flightClass=<s:property value="#viewer.flightClass"/>&&
-							view.departCity=<s:property value="#viewer.depCityDetail.cityCode"/>&&
-							view.arriveCity=<s:property value="#viewer.arrCityDetail.cityCode"/>&&
-							view.takeOffTime=<s:date name="#viewer.takeOffTime" format="yyyy-MM-dd hh:mm:ss" />">选择去程</a>
+						<a class="chGo" href="javascript:void(0);">选择去程</a>
 					</s:elseif>
+					
 				</div>
 			</s:iterator>
 		</s:if>

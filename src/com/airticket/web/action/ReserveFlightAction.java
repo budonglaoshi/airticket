@@ -28,16 +28,6 @@ public class ReserveFlightAction extends ActionSupport {
 	private IFlightSerchBiz flightSerchBiz;
 	private DataReceiver groupDataReceiver;
 	
-	/**
-	 * 预订机票
-	 * @return
-	 */
-	public String select_reserveFlight(){
-		ActionContext context = ActionContext.getContext();
-		List<ResponseView> responseViews=(List<ResponseView>)context.get("reserveViews");
-		context.put("reserveViews", responseViews);
-		return responseViews!=null?SUCCESS:NONE;
-	}
 	
 	/**
 	 * 预订机票
@@ -60,6 +50,7 @@ public class ReserveFlightAction extends ActionSupport {
 		}
 		return null;
 	}
+	
 	
 	/**
 	 * 删除机票

@@ -1,5 +1,6 @@
 package com.airticket.biz;
 
+import java.io.Serializable;
 import java.util.List;
 
 import com.airticket.bean.OrderPassenger;
@@ -14,9 +15,9 @@ public interface OrderPassengerBiz {
 	/**
 	 * 新增乘机人信息
 	 * @param orderPassenger 乘机人信息对象 
-	 * @return true/false结果
+	 * @return 
 	 */
-	public boolean saveByOrderPassenger(OrderPassenger orderPassenger);
+	public Serializable saveByOrderPassenger(OrderPassenger orderPassenger);
 
 	/**
 	 * 删除乘机人信息

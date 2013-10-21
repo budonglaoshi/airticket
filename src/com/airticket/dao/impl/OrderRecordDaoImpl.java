@@ -18,9 +18,7 @@ public class OrderRecordDaoImpl extends BaseDao implements OrderRecordDao {
 	public Serializable saveByOrderRecord(OrderRecord orderRecord) {
 		Serializable id = null;
 		try {
-			if(null!=orderRecord){
-				id = this.insert(orderRecord);
-			}
+			id = this.insert(orderRecord);
 		} catch (Exception e) {
 			id=null;
 			this.logger.error(e.getMessage(), e);
@@ -34,10 +32,8 @@ public class OrderRecordDaoImpl extends BaseDao implements OrderRecordDao {
 	public boolean deleteByOrderRecord(OrderRecord orderRecord) {
 		boolean isOk = false;
 		try {
-			if(null!=orderRecord){
-				this.delete(orderRecord);
-				isOk = true;
-			}
+			this.delete(orderRecord);
+			isOk = true;
 		} catch (Exception e) {
 			isOk = false;
 			this.logger.error(e.getMessage(), e);
@@ -52,10 +48,8 @@ public class OrderRecordDaoImpl extends BaseDao implements OrderRecordDao {
 	public boolean updateByOrderRecord(OrderRecord orderRecord) {
 		boolean isOk  =false;
 		try {
-			if(null!=orderRecord){
-				this.update(orderRecord);
-				isOk = true;
-			}
+			this.update(orderRecord);
+			isOk = true;
 		} catch (Exception e) {
 			isOk = false;
 			this.logger.error(e.getMessage(),e);

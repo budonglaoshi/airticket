@@ -78,9 +78,9 @@ public class FlightSerchAction extends ActionSupport {
 			ActionContext context = ActionContext.getContext();
 			context.put("viewers", filterViews);
 			context.put("depart", view.getDepartCity());
-			context.put("departTime",SignatureUtils.formatDateToString(view.getDepartDate(),"yyyy-MM-dd hh:mm:ss"));
+			context.put("departTime",SignatureUtils.formatDateToString(view.getDepartDate(),"yyyy-MM-dd"));
 			context.put("arrive", view.getArriveCity());
-			context.put("arriveTime",SignatureUtils.formatDateToString(view.getReturnDate(),"yyyy-MM-dd hh:mm:ss"));
+			context.put("arriveTime",SignatureUtils.formatDateToString(view.getReturnDate(),"yyyy-MM-dd"));
 			context.put("type", view.getSearchType());
 			if(null!=filterViews){context.put("size", filterViews.size());}
 			return SUCCESS;
@@ -97,7 +97,7 @@ public class FlightSerchAction extends ActionSupport {
 				&& !StaticData.EMPTY.equals(view.getDepartCity())
 				&& null != view.getArriveCity()
 				&& !StaticData.EMPTY.equals(view.getArriveCity())) {
-			Date[] days = SignatureUtils.get30Days();
+			Date[] days = SignatureUtils.getDays(7);
 			List<ResponseView> viewers = flightSerchBiz.searchDaysFlight(days,view, StaticData.SERCH_URL, eachLowerPriceReceiver);
 			ResponseView view = null;
 			// 按照日期排序

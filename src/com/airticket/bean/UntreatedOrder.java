@@ -2,9 +2,17 @@ package com.airticket.bean;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
+import java.util.Set;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 /**
@@ -14,62 +22,15 @@ import javax.persistence.Table;
 @Table(name = "p1_untreated_order", catalog = "airticket")
 public class UntreatedOrder extends Order implements Serializable {
 
+	
 	// Constructors
 
 	/** default constructor */
-	public UntreatedOrder() {
-	}
-
-	/** minimal constructor */
-	public UntreatedOrder(String orderid, String departCityCode,
-			String arriveCityCode, String departCityName,
-			String arriveCityName, Timestamp takeOffTime, Timestamp arriveTime,
-			String craftType, String airlineCode, String airlineName,
-			Double price, String statusid, String contactName,
-			String mobilePhone) {
-		this.orderid = orderid;
-		this.departCityCode = departCityCode;
-		this.arriveCityCode = arriveCityCode;
-		this.departCityName = departCityName;
-		this.arriveCityName = arriveCityName;
-		this.takeOffTime = takeOffTime;
-		this.arriveTime = arriveTime;
-		this.craftType = craftType;
-		this.airlineCode = airlineCode;
-		this.airlineName = airlineName;
-		this.price = price;
-		this.statusid = statusid;
-		this.contactName = contactName;
-		this.mobilePhone = mobilePhone;
-	}
-
-	/** full constructor */
-	public UntreatedOrder(String orderid, String departCityCode,
-			String arriveCityCode, String departCityName,
-			String arriveCityName, Timestamp takeOffTime, Timestamp arriveTime,
-			String craftType, String airlineCode, String airlineName,
-			Double price, String statusid, String contactName,
-			String mobilePhone, String contactEmail) {
-		this.orderid = orderid;
-		this.departCityCode = departCityCode;
-		this.arriveCityCode = arriveCityCode;
-		this.departCityName = departCityName;
-		this.arriveCityName = arriveCityName;
-		this.takeOffTime = takeOffTime;
-		this.arriveTime = arriveTime;
-		this.craftType = craftType;
-		this.airlineCode = airlineCode;
-		this.airlineName = airlineName;
-		this.price = price;
-		this.statusid = statusid;
-		this.contactName = contactName;
-		this.mobilePhone = mobilePhone;
-		this.contactEmail = contactEmail;
-	}
+	public UntreatedOrder() {}
 
 	// Property accessors
 	@Id
-	@Column(name = "orderid", unique = true, nullable = false, length = 20)
+	@Column(name = "orderid", unique = true, nullable = false, length = 100)
 	public String getOrderid() {
 		return this.orderid;
 	}
@@ -78,7 +39,7 @@ public class UntreatedOrder extends Order implements Serializable {
 		this.orderid = orderid;
 	}
 
-	@Column(name = "departCityCode", nullable = false, length = 20)
+	@Column(name = "departCityCode", nullable = false, length = 100)
 	public String getDepartCityCode() {
 		return this.departCityCode;
 	}
@@ -87,7 +48,7 @@ public class UntreatedOrder extends Order implements Serializable {
 		this.departCityCode = departCityCode;
 	}
 
-	@Column(name = "arriveCityCode", nullable = false, length = 20)
+	@Column(name = "arriveCityCode", nullable = false, length = 100)
 	public String getArriveCityCode() {
 		return this.arriveCityCode;
 	}
@@ -96,7 +57,7 @@ public class UntreatedOrder extends Order implements Serializable {
 		this.arriveCityCode = arriveCityCode;
 	}
 
-	@Column(name = "departCityName", nullable = false, length = 20)
+	@Column(name = "departCityName", nullable = false, length = 100)
 	public String getDepartCityName() {
 		return this.departCityName;
 	}
@@ -105,7 +66,7 @@ public class UntreatedOrder extends Order implements Serializable {
 		this.departCityName = departCityName;
 	}
 
-	@Column(name = "arriveCityName", nullable = false, length = 20)
+	@Column(name = "arriveCityName", nullable = false, length = 100)
 	public String getArriveCityName() {
 		return this.arriveCityName;
 	}
@@ -132,7 +93,7 @@ public class UntreatedOrder extends Order implements Serializable {
 		this.arriveTime = arriveTime;
 	}
 
-	@Column(name = "craftType", nullable = false, length = 20)
+	@Column(name = "craftType", nullable = false, length = 100)
 	public String getCraftType() {
 		return this.craftType;
 	}
@@ -141,7 +102,7 @@ public class UntreatedOrder extends Order implements Serializable {
 		this.craftType = craftType;
 	}
 
-	@Column(name = "airlineCode", nullable = false, length = 20)
+	@Column(name = "airlineCode", nullable = false, length = 100)
 	public String getAirlineCode() {
 		return this.airlineCode;
 	}
@@ -150,7 +111,7 @@ public class UntreatedOrder extends Order implements Serializable {
 		this.airlineCode = airlineCode;
 	}
 
-	@Column(name = "airlineName", nullable = false, length = 20)
+	@Column(name = "airlineName", nullable = false, length = 100)
 	public String getAirlineName() {
 		return this.airlineName;
 	}
@@ -168,16 +129,16 @@ public class UntreatedOrder extends Order implements Serializable {
 		this.price = price;
 	}
 
-	@Column(name = "statusid", nullable = false, length = 1)
-	public String getStatusid() {
+	@Column(name = "statusid", nullable = false, length = 10)
+	public Integer getStatusid() {
 		return this.statusid;
 	}
 
-	public void setStatusid(String statusid) {
+	public void setStatusid(Integer statusid) {
 		this.statusid = statusid;
 	}
 
-	@Column(name = "contactName", nullable = false, length = 20)
+	@Column(name = "contactName", nullable = false, length = 100)
 	public String getContactName() {
 		return this.contactName;
 	}
@@ -186,7 +147,7 @@ public class UntreatedOrder extends Order implements Serializable {
 		this.contactName = contactName;
 	}
 
-	@Column(name = "mobilePhone", nullable = false, length = 20)
+	@Column(name = "mobilePhone", nullable = false, length = 100)
 	public String getMobilePhone() {
 		return this.mobilePhone;
 	}
@@ -195,13 +156,53 @@ public class UntreatedOrder extends Order implements Serializable {
 		this.mobilePhone = mobilePhone;
 	}
 
-	@Column(name = "contactEMail", length = 20)
+	@Column(name = "contactEMail", length = 100)
 	public String getContactEmail() {
 		return this.contactEmail;
 	}
 
+	
 	public void setContactEmail(String contactEmail) {
 		this.contactEmail = contactEmail;
 	}
 
+	//延迟加载：多对一方式
+	//关联信息：外键name = "category_id"
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "travelinvoicesid")
+	public OrderTravelInvoices getOrderTravelInvoices(){
+		return this.orderTravelInvoices;
+	}
+	
+	public void setOrderTravelInvoices(OrderTravelInvoices orderTravelInvoices){
+		this.orderTravelInvoices = orderTravelInvoices;
+	}
+	
+	//级联操作：cascade = CascadeType.ALL
+	//延迟加载：fetch = FetchType.LAZY
+	//映射：mappedBy = "p1_untreated_order"
+	//一对多方式
+	 @OneToMany(fetch=FetchType.LAZY)  
+	 @JoinColumn(name="orderid")
+	public Set<OrderPassenger> getOrderPassengers(){
+		return this.orderPassengers;
+	}
+	
+	public void setOrderPassengers(Set<OrderPassenger> orderPassengers){
+		this.orderPassengers = orderPassengers;
+	}
+	
+//	@Column(name = "travelinvoicesid", nullable = false, length = 10)
+//	public Integer getTravelinvoicesid(){
+//		return this.travelinvoicesid;
+//	}
+//	
+//	public void setTravelinvoicesid(Integer travelinvoicesid){
+//		this.travelinvoicesid = travelinvoicesid;
+//	}
+	
+	
+	
+	
 }
+	

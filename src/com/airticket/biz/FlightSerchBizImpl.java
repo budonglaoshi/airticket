@@ -75,7 +75,7 @@ public class FlightSerchBizImpl implements IFlightSerchBiz {
 					new Thread(new LoadMonthPricesHandler(requester, viewers,receiver)).start();
 				}
 			}
-			while (viewers.size() < 3) {
+			while (viewers.size() < days.length) {
 				continue;
 			}
 		} catch (Exception e) {

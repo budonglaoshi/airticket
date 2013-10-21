@@ -4,14 +4,14 @@ function Person() {
 	var perNoType = "";
 	var perNo = "";
 	var insurancePrice = new Number();
-	var birthday = "";
+	var passengerType = "";
 
-	this.getBirthday = function() {
-		return birthday;
+	this.getPassengerType = function() {
+		return passengerType;
 	}
 
-	this.setBirthday = function(_birthday) {
-		birthday = _birthday;
+	this.setPassengerType = function(_passengerType) {
+		passengerType = _passengerType;
 	}
 	
 	this.getName = function() {

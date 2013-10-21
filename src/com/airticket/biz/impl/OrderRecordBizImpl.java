@@ -37,6 +37,9 @@ public class OrderRecordBizImpl implements OrderRecordBiz {
 		return null;
 	}
 
+	
+	
+	//getter and setter
 	public OrderRecordDao getOrderRecordDao() {
 		return orderRecordDao;
 	}

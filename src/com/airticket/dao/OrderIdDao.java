@@ -30,7 +30,8 @@ public interface OrderIdDao {
 	 * 查询订单主键
 	 * @return 主键
 	 */
-	public OrderId getMajorKey();
+	public OrderId selectNewOrderId();
+
 	
 	
 

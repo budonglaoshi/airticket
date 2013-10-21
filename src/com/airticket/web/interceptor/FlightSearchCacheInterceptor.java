@@ -37,34 +37,14 @@ public class FlightSearchCacheInterceptor  implements Interceptor {
 		
 		FlightSerchAction serchAction = (FlightSerchAction)invocation.getAction();
 		
-		
-		Object departObj = params.get("view.departCity");
-		Object departDateObj = params.get("view.departDate");
-		Object arriveObj = params.get("view.arriveCity");
-		Object returnObj = params.get("view.returnDate");
-		Object typeObj = params.get("view.searchType");
-		//提取
-		String departCity = (null!=departObj?((String[])departObj)[0]:StaticData.EMPTY);
-		String departDate = (null!=departDateObj?((String[])departDateObj)[0]:StaticData.EMPTY);
-		String arriveCity = (null!=arriveObj?((String[])arriveObj)[0]:StaticData.EMPTY);
-		String returnDate = (null!=returnObj?((String[])returnObj)[0]:StaticData.EMPTY);
-		String searchType = (null!=typeObj?((String[])typeObj)[0]:StaticData.EMPTY);
-		//初始
-		serchAction.setView(new RequestView());
-		serchAction.getView().setDepartCity(departCity);
-		serchAction.getView().setDepartDate(SignatureUtils.formatStringToDate(departDate,"yyyy-MM-dd"));
-		serchAction.getView().setArriveCity(arriveCity);
-		serchAction.getView().setReturnDate(SignatureUtils.formatStringToDate(returnDate,"yyyy-MM-dd"));
-		serchAction.getView().setSearchType(searchType);
-		
-		
+		RequestView viewer = serchAction.getView();
 		
 		if ((null == MemcachedUtil.get(ip + "views"))
-				|| (!departCity.equals(MemcachedUtil.get(ip + "depart"))
-						|| !departDate.equals(MemcachedUtil.get(ip + "departTime"))
-						|| !arriveCity.equals(MemcachedUtil.get(ip + "arrive"))
-						|| (!returnDate.equals(null == MemcachedUtil.get(ip+ "arriveTime") ? StaticData.EMPTY: MemcachedUtil.get(ip+ "arriveTime"))) 
-						|| !searchType.equals(MemcachedUtil.get(ip + "type")))) {
+				|| (!viewer.getDepartCity().equals(MemcachedUtil.get(ip + "depart"))
+						|| !SignatureUtils.formatDateToString(viewer.getDepartDate(), "yyyy-MM-dd").equals(MemcachedUtil.get(ip + "departTime"))
+						|| !viewer.getArriveCity().equals(MemcachedUtil.get(ip + "arrive"))
+						|| (!SignatureUtils.formatDateToString(viewer.getReturnDate(), "yyyy-MM-dd").equals(null == MemcachedUtil.get(ip+ "arriveTime") ? StaticData.EMPTY: MemcachedUtil.get(ip+ "arriveTime"))) 
+						|| !viewer.getSearchType().equals(MemcachedUtil.get(ip + "type")))) {
 			
 			String callback = invocation.invoke();
 			

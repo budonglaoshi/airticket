@@ -1,6 +1,8 @@
 package com.airticket.web.interceptor;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
@@ -10,6 +12,8 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import freemarker.cache.StrongCacheStorage;
 
 public class SetCharacterEncodingFilter implements Filter { // 要实现Filter接口
 
@@ -37,6 +41,8 @@ public class SetCharacterEncodingFilter implements Filter { // 要实现Filter�
 			request.setCharacterEncoding("UTF-8");
 			response.setCharacterEncoding("UTF-8");
 		}
+		
+		//response.setContentType("text/html;charset=utf-8");
 
 		/*
 		 * 使用doFilter方法调用链中的下一个过滤器或目标资源（servlet或JSP页面）。

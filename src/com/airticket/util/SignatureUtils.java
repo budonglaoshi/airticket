@@ -84,11 +84,11 @@ public class SignatureUtils {
 	 * 
 	 * @return
 	 */
-	public static Date[] get30Days(){
-		Date[] days = new Date[7];
+	public static Date[] getDays(int count){
+		Date[] days = new Date[count];
 		Calendar calendar = Calendar.getInstance();
 		days[0] = getToday(calendar);
-		for (int i=1;i<days.length;i++) {
+		for (int i=1;i<count;i++) {
 			calendar.add(Calendar.DAY_OF_MONTH,1);
 			days[i] = getToday(calendar);
 		}

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts>
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+
 	<package name="default" extends="struts-default" namespace="/">
+	
 		<!--  -->
 		<interceptors>
 			<interceptor name="flightSearchCacheInterceptor" class="com.airticket.web.interceptor.FlightSearchCacheInterceptor" />
@@ -9,28 +12,31 @@
 			<interceptor name="saveReserveInterceptor" class="com.airticket.web.interceptor.SaveReserveInterceptor" />
 			<interceptor name="deleteReserveInterceptor" class="com.airticket.web.interceptor.DeleteReserveInterceptor" />
 			<interceptor name="selectReserveInterceptor" class="com.airticket.web.interceptor.SelectReserveInterceptor" />
-			
 			<interceptor name="saveOrderInterceptor" class="com.airticket.web.interceptor.SaveOrderInterceptor" />
 		</interceptors>
+		
+
+
+		
+		
 		<!--  -->
 		<global-results>
-			<result name="success">/{1}.jsp</result>
 			<result name="error">/404.jsp</result>
 			<result name="none">/404.jsp</result>
-			<result name="login"></result>
-			<result name="input"></result>
+			<result name="login">/404.jsp</result>
+			<result name="input">/404.jsp</result>
 		</global-results>
 		
 		
 		<action name="serchflight" class="flightSerchAction" method="searchFlight">
+			<interceptor-ref name="params" />
 			<interceptor-ref name="flightSearchCacheInterceptor" />
-			<interceptor-ref name="defaultStack" />
 			<result name="success" >/index.jsp</result>
 		</action>
 		
 		<action name="loadLine" class="flightSerchAction" method="loadLine">
+			<interceptor-ref name="params" />
 			<interceptor-ref name="loadLineCacheInterceptor" />
-			<interceptor-ref name="defaultStack" />
 			<result name="success" >/index.jsp</result>
 		</action>
 		
@@ -41,21 +47,19 @@
 			<result name="success">/reserve.jsp</result>
 		</action>
 		<action name="deletereserve" class="reserveFlightAction" method="delete_reserveFlight">
+			<interceptor-ref name="params" />
 			<interceptor-ref name="deleteReserveInterceptor" />
-			<interceptor-ref name="defaultStack" />
 			<result name="success">/reserve.jsp</result>
 		</action>
 		<action name="selectreserve" class="reserveFlightAction" method="select_reserveFlight">
+			<interceptor-ref name="params" />
 			<interceptor-ref name="selectReserveInterceptor" />
-			<interceptor-ref name="defaultStack" />
 			<result name="success">/reserve.jsp</result>
 		</action>
 		
 		<action name="saveorder" class="orderAction" method="save_order">
-           <!-- <interceptor-ref name="params" />
-                
-			<interceptor-ref name="saveOrderInterceptor" /> -->
-			<result name="success">/reserve.jsp</result>
+			<result name="success">/reserve_list.jsp</result>
 		</action>
+		
 	</package>
 </struts>    
