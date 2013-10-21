@@ -1,6 +1,8 @@
 package com.airticket.web.interceptor;
 
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
@@ -57,8 +59,6 @@ public class FlightSearchCacheInterceptor  implements Interceptor {
 		serchAction.getView().setReturnDate(SignatureUtils.formatStringToDate(returnDate,"yyyy-MM-dd"));
 		serchAction.getView().setSearchType(searchType);
 		
-		
-		
 		if ((null == MemcachedUtil.get(ip + "views"))
 				|| (!departCity.equals(MemcachedUtil.get(ip + "depart"))
 						|| !departDate.equals(MemcachedUtil.get(ip + "departTime"))
@@ -76,7 +76,9 @@ public class FlightSearchCacheInterceptor  implements Interceptor {
 			MemcachedUtil.delete(ip + "arrive");
 			MemcachedUtil.delete(ip + "arriveTime");
 			MemcachedUtil.delete(ip + "type");
-
+			
+			MemcachedUtil.delete(ip + "days_views");
+			
 			// 缓存时间
 			Date cacheTime = new Date(System.currentTimeMillis() + 20 * 60 * 1000);
 			

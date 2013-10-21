@@ -1,27 +1,22 @@
+=\=\=\=\=\=\=
+<<<<<<<=HEAD
+>>>>>>>=refs/remotes/allen/master
 eclipse.preferences.version=1
 encoding//WebRoot/js/linechart/highcharts.js=UTF-8
 encoding//WebRoot/js/linechart/line.js=UTF-8
-encoding//WebRoot/js/linechart/menu.js=UTF-8
 encoding//WebRoot/js/map.js=UTF-8
 encoding//WebRoot/js/person.js=UTF-8
 encoding//WebRoot/js/personView.js=UTF-8
+encoding//WebRoot/reserve_list.jsp=UTF-8
 encoding//src/com/airticket/bean/BeingOrder.java=UTF-8
-<<<<<<< HEAD
 encoding//src/com/airticket/biz/FlightSerchBizImpl.java=UTF-8
 encoding//src/com/airticket/biz/OrderPassengerBiz.java=UTF-8
 encoding//src/com/airticket/biz/OrderRecordBiz.java=UTF-8
-encoding//src/com/airticket/biz/handler/LoadMonthPricesHandler.java=UTF-8
-encoding//src/com/airticket/dao/OrderDao.java=UTF-8
-encoding//src/com/airticket/dao/OrderPassengerDao.java=UTF-8
-encoding//src/com/airticket/dao/OrderRecordDao.java=UTF-8
-=======
 encoding//src/com/airticket/biz/handler/LoadMonthPricesHandler.java=UTF-8
 encoding//src/com/airticket/biz/impl/FlightSerchBizImpl.java=UTF-8
 encoding//src/com/airticket/dao/OrderDao.java=UTF-8
 encoding//src/com/airticket/dao/OrderPassengerDao.java=UTF-8
 encoding//src/com/airticket/dao/OrderRecordDao.java=UTF-8
-encoding//src/com/airticket/dao/OrderRecordStatusDao.java=UTF-8
->>>>>>> refs/remotes/origin/master
 encoding//src/com/airticket/dao/OrderTravelInvoicesDao.java=UTF-8
 encoding//src/com/airticket/dao/UserDao.java=UTF-8
 encoding//src/com/airticket/listener/DataConfigLoaderListener.java=UTF-8
@@ -93,6 +88,7 @@ encoding//src/com/airticket/web/action/FlightSerchAction.java=UTF-8
 encoding//src/com/airticket/web/action/ReserveFlightAction.java=UTF-8
 encoding//src/com/airticket/web/interceptor/DeleteReserveInterceptor.java=UTF-8
 encoding//src/com/airticket/web/interceptor/FlightSearchCacheInterceptor.java=UTF-8
+encoding//src/com/airticket/web/interceptor/LoadDaysCacheInterceptor.java=UTF-8
 encoding//src/com/airticket/web/interceptor/LoadLineCacheInterceptor.java=UTF-8
 encoding//src/com/airticket/web/interceptor/SaveReserveInterceptor.java=UTF-8
 encoding//src/com/airticket/web/interceptor/SelectReserveInterceptor.java=UTF-8

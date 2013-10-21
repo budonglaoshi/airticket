@@ -1,7 +1,7 @@
 function doDelete(){	
 			document.forms[0].action += "deletereserve";
 			
-			if(confirm("确认操作?") == false)
+			if(confirm("纭鎿嶄綔?") == false)
 			return;
 			
 			document.forms[0].submit();	
@@ -9,11 +9,11 @@ function doDelete(){
 		
 		var passenger_max=0;
 		function doInsertPassenger(){
-			if(confirm("确认操作?") == false){
+			if(confirm("纭鎿嶄綔?") == false){
 				return;
  			}
  			if($(".passenger").length>=9){
- 				alert("新增人数上限");
+ 				alert("鏂板浜烘暟涓婇檺");
  				return;
  			}
  			passenger_max=passenger_max+1;  
@@ -30,11 +30,11 @@ function doDelete(){
 		}
 		
 		function doDeletePassenger(now){
-			if(confirm("确认删除?") == false){
+			if(confirm("纭鍒犻櫎?") == false){
 				return;
  			}
  			if($(".passenger").length<=1){
- 				alert("删除人数上限");
+ 				alert("鍒犻櫎浜烘暟涓婇檺");
  				return;
  			}
  			

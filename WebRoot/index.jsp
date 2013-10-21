@@ -23,7 +23,7 @@ $(document).ready(function() {
 			"view.departCity" : dcity,
 			"view.arriveCity" : acity
 		}, function(rv) {
-			var json = eval(rv);
+			var json = $.parseJSON(rv);
 			//出发日期
 			var takeOffTime = new Array();
 			//出发票价
@@ -35,7 +35,11 @@ $(document).ready(function() {
 				price[i] = json[i].price;
 				depaerAPortName = json[i].depCityDetail.cityName;
 				arriveAPortName = json[i].arrCityDetail.cityName;
-				takeOffTime[i] = json[i].takeOffTime.month+"-"+json[i].takeOffTime.day;
+				var time = json[i].takeOffTime.split("-");
+				
+				takeOffTime[i] = time[1]+"-"+time[2];
+				
+				
 			}
 			loadLine(depaerAPortName,arriveAPortName,price,takeOffTime);
 		});
@@ -53,12 +57,11 @@ $(document).ready(function() {
 		$("#serchform").submit();
 	});
 	
-	
-	
-	
-	
-	
 })();
+
+	function serchform_btn(){
+		$("#serchform").submit();
+	};
 </script>
 <style type="text/css">
 * {
@@ -80,7 +83,7 @@ a {
 </head>
 <body>
 	<center>
-
+		
 		<div id="container"
 			style="width: 633px; height: 215px; margin: 0 auto"></div>
 		<form id="serchform" action="serchflight" method="post">
@@ -98,72 +101,14 @@ a {
 				value="KMG" /> <label id="arrLabel">返程时间</label><input
 				id="returnDate" name="view.returnDate"
 				value="<s:property value="#arriveTime"/>" /><br /> <input
-				id="menuSubmit" type="hidden" name="view.menuSubmit" /> <br /> <input
-				type="submit" value="submit" />
+				id="menuSubmit" type="hidden" name="view.menuSubmit" /> <br /> <input type="button"
+				 value="submit"  onclick="serchform_btn()"/>
 		</form>
 
 		<div style="float: right;">
 			<a href="reserve.jsp">我的订单</a>
 		</div>
-		<s:if test="#viewers!=null">
-			<br />
-			<br />
-			<br />
-			<s:iterator var="viewer" value="#viewers">
-				<div style="border: 1px solid #dedede;height: 150px;">
-					<s:property value="#viewer.depCityDetail.cityName" />
-					-
-					<s:property value="#viewer.arrCityDetail.cityName" />
-					<br />
-					<s:property value="#viewer.depAirportInfo.airPortName" />
-					-
-					<s:property value="#viewer.arrAirportInfo.airPortName" />
-					&nbsp;&nbsp;
-					<s:property value="#viewer.price" />
-					(
-					<s:property value="#viewer.rate" />
-					) 起飞时间：
-					<s:date name="#viewer.takeOffTime" format="yyyy-MM-dd hh:mm:ss" />
-					还剩
-					<s:property value="#viewer.quantity" />
-					张票<br /> 航班号：
-					<s:property value="#viewer.flightNo" />
-					<br /> 航班类型：
-					<s:property value="#viewer.craftInfo.craftType" />
-					<br />
-					<s:property value="#viewer.flightClassName" />
-					<br />
-					<s:property value="#viewer.airlineInfo.airLineName" />
-					<br />
-
-					<s:if test='%{#type eq "S"}'>
-						<a href="reserve.jsp?view.flightNo=<s:property value="#viewer.flightNo"/>&&
-					view.price=<s:property value="#viewer.price"/>&&
-					view.flightClass=<s:property value="#viewer.flightClass"/>&&
-					view.departCity=<s:property value="#viewer.depCityDetail.cityCode"/>&&
-					view.arriveCity=<s:property value="#viewer.arrCityDetail.cityCode"/>&&
-					view.takeOffTime=<s:date name="#viewer.takeOffTime" format="yyyy-MM-dd hh:mm:ss" />">预定</a>
-					</s:if>
-					<s:elseif test='%{#type eq "D"}'>
-						<a id="chGo" href="reserve.jsp?
-							view.flightNo=<s:property value="#viewer.flightNo"/>&&
-							view.price=<s:property value="#viewer.price"/>&&
-							view.flightClass=<s:property value="#viewer.flightClass"/>&&
-							view.departCity=<s:property value="#viewer.depCityDetail.cityCode"/>&&
-							view.arriveCity=<s:property value="#viewer.arrCityDetail.cityCode"/>&&
-							view.takeOffTime=<s:date name="#viewer.takeOffTime" format="yyyy-MM-dd hh:mm:ss" />">选择去程</a>
-					</s:elseif>
-				</div>
-			</s:iterator>
-		</s:if>
-		<s:elseif test="#reserveViews==null">
-			<br />
-			<br />
-			<br />
-			<b>你木有资料，不要和朕开玩笑！</b>
-			<br />
-			<img alt="你木有订单，不要和朕开玩笑！" src="/airticket/image/x.gif">
-		</s:elseif>
+		
 	</center>
 
 </body>

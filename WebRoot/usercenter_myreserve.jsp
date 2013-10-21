@@ -9,7 +9,9 @@
 <script type="text/javascript" src="/airticket/js/personView.js"></script>
 <script type="text/javascript" src="/airticket/js/area.js"></script>
 <script type="text/javascript" src="/airticket/js/loadpage.js"></script>
-<body onload="init();">
+<body onload="">
+	 <h2>我的订单</h2>
+
 	
 	<div id="orderInfo" style="border: 1px solid #ededed;overflow: auto;display: block;"></div>&nbsp; 
 	<div id="list_passenger" style="border: 1px solid #ededed;overflow: auto;display: block;"></div>&nbsp; 

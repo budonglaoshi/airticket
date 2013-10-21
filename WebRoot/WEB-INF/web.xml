@@ -8,23 +8,18 @@
     <param-name>contextConfigLocation</param-name>
     <param-value>/WEB-INF/classes/spring.xml</param-value>
   </context-param>
-   <filter>
-   <filter-name>SetCharacterEncodingFilter</filter-name>
-   <!-- 过滤器设置编码文件 -->
-        <filter-class>com.airticket.web.interceptor.SetCharacterEncodingFilter</filter-class>
-   <init-param>
-     <!--init-param元素定义了过滤器的初始化参数-->
-    <description>给参数和值设置名称和编码类型</description>
-    <param-name>encode</param-name>
-    <param-value>UTF-8</param-value>
-   </init-param>
-  </filter>
-  
- <filter-mapping>
-   <!-- filter-mapping告诉容器所有与模式向匹配的请求都应该允许通过访问控制过滤器。所有以.do结尾的访问都先通过过滤器文件过滤  -->
-   <filter-name>SetCharacterEncodingFilter</filter-name>
-   <url-pattern>/*</url-pattern>
-  </filter-mapping>
+<filter>
+	<filter-name>CharacterEncodingFilter</filter-name>
+	<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+	<init-param>
+		<param-name>encoding</param-name>
+		<param-value>UTF-8</param-value>
+	</init-param>
+</filter>
+<filter-mapping>
+	<filter-name>CharacterEncodingFilter</filter-name>
+	<url-pattern>/*</url-pattern>
+</filter-mapping>  
   <filter>
     <filter-name>struts2</filter-name>
     <filter-class>

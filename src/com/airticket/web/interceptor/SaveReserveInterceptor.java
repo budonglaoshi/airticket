@@ -96,9 +96,8 @@ public class SaveReserveInterceptor implements Interceptor {
 				if (String.valueOf(view.getPrice()).equals(String.valueOf(new_responseView.getPrice()))
 						&& view.getFlightNo().equals(new_responseView.getFlightNo())
 						&& view.getFlightClass().equals(new_responseView.getFlightClass())) {
-					if (null != viewer) {
-						isok=false;
-					} else {
+					if (null == viewer) {
+						viewer = new_responseView;
 						if(null==reserveViews){
 							reserveViews = new ArrayList<ResponseView>();
 						}
@@ -106,14 +105,15 @@ public class SaveReserveInterceptor implements Interceptor {
 						MemcachedUtil.delete(ip + "reserveViews");
 						MemcachedUtil.add(ip + "reserveViews", reserveViews);
 						isok = true;
+						break;
 					}
-					break;
+					isok = false;
 				}
 			}
 			
 			if(isok){
-				writer.print(JsonUtil.objectToJsonDateSerializer(MemcachedUtil.get(ip + "reserveViews"), "yyyy-MM-dd hh:mm:ss"));
-				System.out.println(JsonUtil.objectToJsonDateSerializer(MemcachedUtil.get(ip + "reserveViews"), "yyyy-MM-dd hh:mm:ss"));
+				writer.print(JsonUtil.objectToJsonDateSerializer(viewer, "yyyy-MM-dd hh:mm:ss"));
+				System.out.println(JsonUtil.objectToJsonDateSerializer(viewer, "yyyy-MM-dd hh:mm:ss"));
 			}else{
 				MemcachedUtil.delete(ip + "views");
 				MemcachedUtil.add(ip + "views", jsonRes);

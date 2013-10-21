@@ -11,6 +11,8 @@ import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.GenericGenerator;
+
 /**
  * OrderRecord entity. @author MyEclipse Persistence Tools
  */
@@ -21,11 +23,11 @@ public class OrderRecord implements Serializable {
 	// Fields
 
 	//订单操作记录ID
-	private String recordid;
+	private Integer recordid;
 	//订单操作时间
 	private Timestamp recordTime;
 	//订单操作状态
-	private String recordstatus;
+	private Integer recordstatus;
 	//订单操作备注
 	private String comment;
 	//订单ID
@@ -41,13 +43,15 @@ public class OrderRecord implements Serializable {
 
 
 	// Property accessors
-	@SequenceGenerator(name="generator",sequenceName="seq_OrderRecord")@Id @GeneratedValue(strategy=SEQUENCE, generator="generator")
-	@Column(name = "recordid", unique = true, nullable = false, length = 20)
-	public String getRecordid() {
+	@Id
+	@GenericGenerator(name="generator", strategy="increment") 
+	@GeneratedValue(generator="generator")
+    @Column(name="recordid", unique=true, nullable=false)
+	public Integer getRecordid() {
 		return this.recordid;
 	}
 
-	public void setRecordid(String recordid) {
+	public void setRecordid(Integer recordid) {
 		this.recordid = recordid;
 	}
 
@@ -60,15 +64,6 @@ public class OrderRecord implements Serializable {
 		this.recordTime = recordTime;
 	}
 
-	@Column(name = "recordstatus", nullable = false, length = 20)
-	public String getRecordstatus() {
-		return this.recordstatus;
-	}
-
-	public void setRecordstatus(String recordstatus) {
-		this.recordstatus = recordstatus;
-	}
-
 	@Column(name = "comment", length = 200)
 	public String getComment() {
 		return this.comment;
@@ -78,7 +73,7 @@ public class OrderRecord implements Serializable {
 		this.comment = comment;
 	}
 
-	@Column(name = "orderid", nullable = false, length = 20)
+	@Column(name = "orderid", nullable = false, length = 100)
 	public String getOrderid() {
 		return this.orderid;
 	}
@@ -87,13 +82,22 @@ public class OrderRecord implements Serializable {
 		this.orderid = orderid;
 	}
 
-	@Column(name = "userid", nullable = false, length = 20)
+	@Column(name = "userid", nullable = false, length = 100)
 	public String getUserid() {
 		return this.userid;
 	}
 
 	public void setUserid(String userid) {
 		this.userid = userid;
+	}
+
+	@Column(name = "recordstatus", nullable = false, length = 10)
+	public Integer getRecordstatus() {
+		return recordstatus;
+	}
+
+	public void setRecordstatus(Integer recordstatus) {
+		this.recordstatus = recordstatus;
 	}
 
 }

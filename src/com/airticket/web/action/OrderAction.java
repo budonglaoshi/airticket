@@ -1,6 +1,8 @@
 package com.airticket.web.action;
 
 
+import java.io.Serializable;
+import java.util.HashSet;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -8,13 +10,18 @@ import javax.servlet.http.HttpServletRequest;
 import org.apache.log4j.Logger;
 
 import com.airticket.adapter.DataReceiver;
+import com.airticket.bean.Order;
 import com.airticket.bean.OrderPassenger;
 import com.airticket.bean.OrderTravelInvoices;
 import com.airticket.bean.UntreatedOrder;
 import com.airticket.biz.IFlightSerchBiz;
-import com.airticket.biz.OrderIdBiz;
-import com.airticket.biz.impl.OrderIdBizImpl;
+import com.airticket.biz.OrderBiz;
+import com.airticket.biz.OrderPassengerBiz;
+import com.airticket.biz.OrderTraveInvoicesBiz;
 import com.airticket.util.JsonUtil;
+import com.airticket.util.StaticData;
+import com.google.gson.reflect.TypeToken;
+import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 
 @SuppressWarnings("serial")
@@ -24,39 +31,50 @@ public class OrderAction extends ActionSupport {
 
 	private IFlightSerchBiz flightSerchBiz;
 	private DataReceiver groupDataReceiver;
+	private OrderBiz orderBiz;
 	
 	private String passenger_json;
 	private String order_json;
 	private String invoices_json;
 	
-	private OrderIdBiz orderIdBiz=new OrderIdBizImpl();
-	
-	
-	
 	public String save_order(){
-
-    	String orderid=orderIdBiz.getMajorKey();
-    	if(null!=orderid&&("").equals(orderid)){
-    		//untreatedOrder.setOrderid(orderid);
-    	}
-		// 未处理订单JSON转换对象
-    	UntreatedOrder untreatedOrder=JsonUtil.jsonToBeanDateSerializer(order_json, UntreatedOrder.class, "yyyy-MM-dd hh:mm:ss");
-    	
-    	//乘机人信息JSON转换对象
-    	List<OrderPassenger> orderPassengers=(List<OrderPassenger>)JsonUtil.jsonToList(passenger_json);
-    	
-    	//判断是否邮寄行程单
-    	if (null!=invoices_json&&("").equals(invoices_json)) {
-    		//行程单信息JSON转换对象
-        	OrderTravelInvoices orderTravelInvoices=(OrderTravelInvoices)JsonUtil.jsonToBean(invoices_json, OrderTravelInvoices.class);
+		// 将json字符串转换为对象
+        try {
+        	
+        	// 未处理订单JSON转换对象
+        	UntreatedOrder untreatedOrder=JsonUtil.jsonToBeanDateSerializer(order_json, UntreatedOrder.class, "yyyy-MM-dd hh:mm:ss");
+        	
+        	//乘机人信息JSON转换对象
+        	List<OrderPassenger> orderPassengers=(List<OrderPassenger>)JsonUtil.jsonToList(passenger_json,new TypeToken<List<OrderPassenger>>(){}.getType());
+        	
+        	//判断是否邮寄行程单
+        	if (null!=invoices_json&&!StaticData.EMPTY.equals(invoices_json)) {
+        		//行程单信息JSON转换对象
+            	OrderTravelInvoices orderTravelInvoices=(OrderTravelInvoices)JsonUtil.jsonToBean(invoices_json, OrderTravelInvoices.class);
+            	
+            	untreatedOrder.setOrderPassengers(new HashSet<OrderPassenger>(orderPassengers));
+            	untreatedOrder.setOrderTravelInvoices(orderTravelInvoices);
+            	//添加订单
+            	Serializable orderId = orderBiz.saveByOrder(untreatedOrder);
+            	
+            	
+            	if(null!=orderId){
+            		ActionContext.getContext().put("untreatedOrder", untreatedOrder);
+            		ActionContext.getContext().put("orderPassengers",orderPassengers);
+            		
+            		
+            		return SUCCESS;
+            	}
+        	}
+        	
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
-    	
-		return null;
+        return NONE;
 	}
 	
 	/**
 	 * 获取用户ip
-	 * 
 	 * @param request
 	 * @return
 	 */
@@ -128,5 +146,15 @@ public class OrderAction extends ActionSupport {
 	}
 
 	public void setInvoices_json(String invoices_json) {
+		this.invoices_json = invoices_json;
 	}
+
+	public OrderBiz getOrderBiz() {
+		return orderBiz;
+	}
+
+	public void setOrderBiz(OrderBiz orderBiz) {
+		this.orderBiz = orderBiz;
+	}
+
 }

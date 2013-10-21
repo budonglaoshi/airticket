@@ -1,6 +1,7 @@
 package com.airticket.web.interceptor;
 
 import java.io.IOException;
+import java.util.Map;
 
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
@@ -31,12 +32,19 @@ public class SetCharacterEncodingFilter implements Filter { // 要实现Filter�
 		 * 判断在web.xml文件中是否配置了编码格式的信息 如果为空，则设置编码格式为配置文件中的编码格式 否则编码格式设置为GBK
 		 */
 		if (this.encode != null && !this.encode.equals("")) {
+//			Map<String, Object> params = request.getParameterMap();
+//			for (String key : params.keySet()) {
+//				System.out.println(key);
+//				params.put(key, new String(params.get(key).toString().getBytes("iso8859-1"), "utf-8"));
+//			}
 			request.setCharacterEncoding(this.encode);
 			response.setCharacterEncoding(this.encode);
 		} else {
 			request.setCharacterEncoding("UTF-8");
 			response.setCharacterEncoding("UTF-8");
 		}
+		
+		response.setContentType("text/html;charset=utf-8");
 
 		/*
 		 * 使用doFilter方法调用链中的下一个过滤器或目标资源（servlet或JSP页面）。

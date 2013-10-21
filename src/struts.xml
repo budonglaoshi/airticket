@@ -6,6 +6,7 @@
 		<interceptors>
 			<interceptor name="flightSearchCacheInterceptor" class="com.airticket.web.interceptor.FlightSearchCacheInterceptor" />
 			<interceptor name="loadLineCacheInterceptor" class="com.airticket.web.interceptor.LoadLineCacheInterceptor" />
+			<interceptor name="loadDaysCacheInterceptor" class="com.airticket.web.interceptor.LoadDaysCacheInterceptor" />
 			<interceptor name="saveReserveInterceptor" class="com.airticket.web.interceptor.SaveReserveInterceptor" />
 			<interceptor name="deleteReserveInterceptor" class="com.airticket.web.interceptor.DeleteReserveInterceptor" />
 			<interceptor name="selectReserveInterceptor" class="com.airticket.web.interceptor.SelectReserveInterceptor" />
@@ -14,24 +15,30 @@
 		</interceptors>
 		<!--  -->
 		<global-results>
-			<result name="success">/{1}.jsp</result>
 			<result name="error">/404.jsp</result>
 			<result name="none">/404.jsp</result>
-			<result name="login"></result>
-			<result name="input"></result>
+			<result name="login">/404.jsp</result>
+			<result name="input">/404.jsp</result>
 		</global-results>
 		
 		
 		<action name="serchflight" class="flightSerchAction" method="searchFlight">
 			<interceptor-ref name="flightSearchCacheInterceptor" />
 			<interceptor-ref name="defaultStack" />
-			<result name="success" >/index.jsp</result>
+			<result name="success" >/flight_serch.jsp</result>
 		</action>
 		
 		<action name="loadLine" class="flightSerchAction" method="loadLine">
 			<interceptor-ref name="loadLineCacheInterceptor" />
 			<interceptor-ref name="defaultStack" />
 			<result name="success" >/index.jsp</result>
+		</action>
+		
+		<action name="loaddays" class="flightSerchAction" method="loaddays">
+			<interceptor-ref name="params" />
+			<interceptor-ref name="loadDaysCacheInterceptor" />
+			<interceptor-ref name="defaultStack" />
+			<result name="success" >/flight_serch.jsp</result>
 		</action>
 		
 		
@@ -52,10 +59,8 @@
 		</action>
 		
 		<action name="saveorder" class="orderAction" method="save_order">
-           <!-- <interceptor-ref name="params" />
-                
-			<interceptor-ref name="saveOrderInterceptor" /> -->
-			<result name="success">/reserve.jsp</result>
+			<result name="success">/reserve_list.jsp</result>
 		</action>
+		
 	</package>
 </struts>    

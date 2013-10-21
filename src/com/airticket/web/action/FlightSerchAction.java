@@ -6,17 +6,15 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
-import net.sf.json.JSONArray;
-import net.sf.json.JsonConfig;
-import net.sf.json.processors.JsDateJsonBeanProcessor;
-
 import org.apache.log4j.Logger;
+import org.apache.struts2.ServletActionContext;
 
 import com.airticket.adapter.DataReceiver;
 import com.airticket.bean.RequestView;
 import com.airticket.bean.ResponseView;
 import com.airticket.biz.IFlightSerchBiz;
 import com.airticket.util.JsonUtil;
+import com.airticket.util.MemcachedUtil;
 import com.airticket.util.SignatureUtils;
 import com.airticket.util.StaticData;
 import com.opensymphony.xwork2.ActionContext;
@@ -30,6 +28,8 @@ public class FlightSerchAction extends ActionSupport {
 	private IFlightSerchBiz flightSerchBiz;
 	private DataReceiver groupDataReceiver;
 	private DataReceiver eachLowerPriceReceiver;
+	
+	private Date[] days;
 
 	// 机票查询
 	public String searchFlight() {
@@ -42,6 +42,8 @@ public class FlightSerchAction extends ActionSupport {
 				&& !StaticData.EMPTY.equals(view.getArriveCity())
 				&& null != view.getDepartDate()
 				&& !StaticData.EMPTY.equals(view.getDepartDate())) {
+			
+			
 
 			// 发送请求 获取 视图信息
 			List<ResponseView> viewers = flightSerchBiz.searchFlight(view,StaticData.SERCH_URL, groupDataReceiver);
@@ -82,23 +84,39 @@ public class FlightSerchAction extends ActionSupport {
 			context.put("arrive", view.getArriveCity());
 			context.put("arriveTime",SignatureUtils.formatDateToString(view.getReturnDate(),"yyyy-MM-dd hh:mm:ss"));
 			context.put("type", view.getSearchType());
+			
 			if(null!=filterViews){context.put("size", filterViews.size());}
 			return SUCCESS;
 		} else {
 			return NONE;
 		}
 	}
+	
+	public String loaddays(){
+
+		ActionContext.getContext().put("days_views", JsonUtil.objectToJsonDateSerializer(loadData(this.days), "yyyy-MM-dd"));
+		return null;
+	}
 
 	// 实时票价查询
 	public String loadLine() {
-		String msg = "";
+		Date[] days = SignatureUtils.get30Days();
+		String msg = JsonUtil.objectToJsonDateSerializer(loadData(days), "yyyy-MM-dd");
+		ActionContext.getContext().put("lineviews", msg);
+		ActionContext.getContext().put("linedepart", this.view.getDepartCity());
+		ActionContext.getContext().put("linearrive", this.view.getArriveCity());
+		return null;
+	}
+
+	private List<ResponseView> loadData(Date[] days){
+		List<ResponseView> viewers=null;
 		// 必要条件判断
 		if (null != view.getDepartCity()
 				&& !StaticData.EMPTY.equals(view.getDepartCity())
 				&& null != view.getArriveCity()
 				&& !StaticData.EMPTY.equals(view.getArriveCity())) {
-			Date[] days = SignatureUtils.get30Days();
-			List<ResponseView> viewers = flightSerchBiz.searchDaysFlight(days,view, StaticData.SERCH_URL, eachLowerPriceReceiver);
+			
+			viewers = flightSerchBiz.searchDaysFlight(days,view, StaticData.SERCH_URL, eachLowerPriceReceiver);
 			ResponseView view = null;
 			// 按照日期排序
 			for (int i = 0; i < viewers.size(); i++) {
@@ -112,17 +130,9 @@ public class FlightSerchAction extends ActionSupport {
 					}
 				}
 			}
-			
-			
-			msg = JsonUtil.objectToJsonDateSerializer(viewers, "yyyy-MM-dd");
-			ActionContext.getContext().put("lineviews", msg);
-			ActionContext.getContext().put("linedepart", this.view.getDepartCity());
-			ActionContext.getContext().put("linearrive", this.view.getArriveCity());
-		} 
-		return null;
+		}
+		return viewers;
 	}
-
-	
 	
 	
 	
@@ -186,6 +196,14 @@ public class FlightSerchAction extends ActionSupport {
 
 	public void setEachLowerPriceReceiver(DataReceiver eachLowerPriceReceiver) {
 		this.eachLowerPriceReceiver = eachLowerPriceReceiver;
+	}
+
+	public Date[] getDays() {
+		return days;
+	}
+
+	public void setDays(Date[] days) {
+		this.days = days;
 	}
 
 }
