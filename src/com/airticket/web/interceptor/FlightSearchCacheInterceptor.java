@@ -13,7 +13,6 @@ import com.airticket.util.MemcachedUtil;
 import com.airticket.util.SignatureUtils;
 import com.airticket.util.StaticData;
 import com.airticket.web.action.FlightSerchAction;
-import com.airticket.web.action.ReserveFlightAction;
 import com.opensymphony.xwork2.Action;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionInvocation;
