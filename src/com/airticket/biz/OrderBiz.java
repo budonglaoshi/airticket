@@ -34,4 +34,10 @@ public interface OrderBiz{
 	 * @return 响应对象集合
 	 */
 	public List<Order> selectByOrder(Order order);
+	
+	/**
+	 * 获取用户所有订单
+	 * @return
+	 */
+	public List<Order> selectUserOrders(Order order);
 }

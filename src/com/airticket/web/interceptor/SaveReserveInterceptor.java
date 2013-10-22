@@ -15,6 +15,7 @@ import com.airticket.dao.OrderDao;
 import com.airticket.util.JsonUtil;
 import com.airticket.util.MemcachedUtil;
 import com.airticket.util.SignatureUtils;
+import com.airticket.web.action.OrderAction;
 import com.airticket.web.action.ReserveFlightAction;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionInvocation;
@@ -38,23 +39,37 @@ public class SaveReserveInterceptor implements Interceptor {
 
 		// 获取用户ip
 		String ip = this.getIpAddr(ServletActionContext.getRequest());
-
-		ActionContext context = invocation.getInvocationContext().getContext();
-		ReserveFlightAction action = (ReserveFlightAction) invocation.getAction();
-
-		RequestView view = action.getView();
-		// 要获取的对象
-		ResponseView viewer = null;
-		Date cacheTime = new Date(System.currentTimeMillis() + 20 * 60 * 1000);
-		invocation.invoke();
-		
-		// 预定机票的最新信息
-		Object rvs = context.get(ip + "rvs");
+		RequestView view =null;
 		HttpServletResponse response = ServletActionContext.getResponse();
 		response.setCharacterEncoding("utf-8");
 		response.setContentType("text/html;charset=utf-8");
 		PrintWriter writer = response.getWriter();
+		
+		
+		
+		ActionContext context = invocation.getInvocationContext().getContext();
+		try {
+			ReserveFlightAction action = (ReserveFlightAction) invocation.getAction();
+			view = action.getView();
+		} catch (Exception e) {
+			try {
+				OrderAction action = (OrderAction) invocation.getAction();
+				view = action.getView();
+			} catch (Exception e2) {
+				writer.print("false");
+			}
+			
+		}
+		
+		
 
+		 
+		// 要获取的对象
+		ResponseView viewer = null;
+		Date cacheTime = new Date(System.currentTimeMillis() + 20 * 60 * 1000);
+		invocation.invoke();
+		// 预定机票的最新信息
+		Object rvs = context.get(ip + "rvs");
 		if (null != rvs) {
 			List<ResponseView> jsonRes = (List<ResponseView>) rvs;
 			boolean isok = false;

@@ -33,7 +33,14 @@
 		<form id="post_saveorder" action="saveorder" method="post">
 			<input type="hidden" id="passenger_json" name="passenger_json"/>		
 			<input type="hidden" id="order_json" name="order_json"/>		
-			<input type="hidden" id="invoices_json" name="invoices_json"/>		
+			<input type="hidden" id="invoices_json" name="invoices_json"/>
+			<input type="hidden" name="view.flightNo"/>		
+			<input type="hidden" name="view.price" />		
+			<input type="hidden" name="view.flightClass" />		
+			<input type="hidden" name="view.departCity" />		
+			<input type="hidden" name="view.arriveCity" />		
+			<input type="hidden" name="view.takeOffTime" />		
+		
 		</form>
 		<div>
 			<label>总价：￥</label><span id="localPrice"><s:property value="#reserveViews.get(0).price" /></span>

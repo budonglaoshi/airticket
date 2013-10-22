@@ -62,11 +62,11 @@ public class OrderPassengerDaoImpl extends BaseDao implements OrderPassengerDao 
 	 * (non-Javadoc)
 	 * @see com.airticket.dao.OrderPassengerDao#selectByOrderPassenger(com.airticket.bean.OrderPassenger)
 	 */
-	public List<OrderPassenger> selectByOrderPassenger(OrderPassenger orderPassenger) {
+	public List<OrderPassenger> selectByOrderPassenger(OrderPassenger orderPassenger,String... paramNames) {
 		List<OrderPassenger> passengers = null;
-		String hql = "";
+		String hql = this.getSelectHQL(OrderPassenger.class, paramNames);
 		try {
-			Query query = this.queryInfo(hql, orderPassenger);
+			Query query = this.queryInfo(hql.toString(), orderPassenger);
 			if(null!=query){
 				passengers = query.list();
 			}

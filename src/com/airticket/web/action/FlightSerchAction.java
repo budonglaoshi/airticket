@@ -30,6 +30,8 @@ public class FlightSerchAction extends ActionSupport {
 	private IFlightSerchBiz flightSerchBiz;
 	private DataReceiver groupDataReceiver;
 	private DataReceiver eachLowerPriceReceiver;
+	
+	private Date[] days;
 
 	// 机票查询
 	public String searchFlight() {
@@ -89,16 +91,31 @@ public class FlightSerchAction extends ActionSupport {
 		}
 	}
 
+	public String loaddays(){
+
+		ActionContext.getContext().put("days_views", JsonUtil.objectToJsonDateSerializer(loadData(this.days), "yyyy-MM-dd"));
+		return null;
+	}
+
 	// 实时票价查询
 	public String loadLine() {
-		String msg = "";
+		Date[] days = SignatureUtils.getDays(7);
+		String msg = JsonUtil.objectToJsonDateSerializer(loadData(days), "yyyy-MM-dd");
+		ActionContext.getContext().put("lineviews", msg);
+		ActionContext.getContext().put("linedepart", this.view.getDepartCity());
+		ActionContext.getContext().put("linearrive", this.view.getArriveCity());
+		return null;
+	}
+
+	private List<ResponseView> loadData(Date[] days){
+		List<ResponseView> viewers=null;
 		// 必要条件判断
 		if (null != view.getDepartCity()
 				&& !StaticData.EMPTY.equals(view.getDepartCity())
 				&& null != view.getArriveCity()
 				&& !StaticData.EMPTY.equals(view.getArriveCity())) {
-			Date[] days = SignatureUtils.getDays(7);
-			List<ResponseView> viewers = flightSerchBiz.searchDaysFlight(days,view, StaticData.SERCH_URL, eachLowerPriceReceiver);
+			
+			viewers = flightSerchBiz.searchDaysFlight(days,view, StaticData.SERCH_URL, eachLowerPriceReceiver);
 			ResponseView view = null;
 			// 按照日期排序
 			for (int i = 0; i < viewers.size(); i++) {
@@ -112,14 +129,8 @@ public class FlightSerchAction extends ActionSupport {
 					}
 				}
 			}
-			
-			
-			msg = JsonUtil.objectToJsonDateSerializer(viewers, "yyyy-MM-dd");
-			ActionContext.getContext().put("lineviews", msg);
-			ActionContext.getContext().put("linedepart", this.view.getDepartCity());
-			ActionContext.getContext().put("linearrive", this.view.getArriveCity());
-		} 
-		return null;
+		}
+		return viewers;
 	}
 
 	
@@ -186,6 +197,14 @@ public class FlightSerchAction extends ActionSupport {
 
 	public void setEachLowerPriceReceiver(DataReceiver eachLowerPriceReceiver) {
 		this.eachLowerPriceReceiver = eachLowerPriceReceiver;
+	}
+
+	public Date[] getDays() {
+		return days;
+	}
+
+	public void setDays(Date[] days) {
+		this.days = days;
 	}
 
 }

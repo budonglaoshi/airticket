@@ -38,5 +38,5 @@ public interface OrderPassengerDao {
 	 * @param orderPassenger 乘机人信息对象
 	 * @return 响应对象集合
 	 */
-	public List<OrderPassenger> selectByOrderPassenger(OrderPassenger orderPassenger);
+	public List<OrderPassenger> selectByOrderPassenger(OrderPassenger orderPassenger,String... paramNames);
 }

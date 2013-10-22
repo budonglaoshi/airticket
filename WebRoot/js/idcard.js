@@ -39,30 +39,30 @@ clsIDCard.prototype.SetCardNo = function(CardNo) {
   } else {
     pattern= /^\d{15}$/;
     if (pattern.exec(CardNo)==null)return;
-    strCardNo=CardNo.substr(0,6)+'19'+CardNo.substr(6,9)
+    strCardNo=CardNo.substr(0,6)+'19'+CardNo.substr(6,9);
     strCardNo+=this.GetVCode(strCardNo);
   }
   this.Valid=this.CheckValid(strCardNo);
-}
+};
 
 // 校验身份证有效性
 clsIDCard.prototype.IsValid = function() {
   return this.Valid;
-}
+};
 
 // 返回生日字符串，格式如下，1981-10-10
 clsIDCard.prototype.GetBirthDate = function() {
   var BirthDate='';
   if(this.Valid)BirthDate=this.GetBirthYear()+'-'+this.GetBirthMonth()+'-'+this.GetBirthDay();
   return BirthDate;
-}
+};
 
 // 返回生日中的年，格式如下，1981
 clsIDCard.prototype.GetBirthYear = function() {
   var BirthYear='';
   if(this.Valid)BirthYear=this.ID18.substr(6,4);
   return BirthYear;
-}
+};
 
 // 返回生日中的月，格式如下，10
 clsIDCard.prototype.GetBirthMonth = function() {
@@ -70,42 +70,42 @@ clsIDCard.prototype.GetBirthMonth = function() {
   if(this.Valid)BirthMonth=this.ID18.substr(10,2);
   if(BirthMonth.charAt(0)=='0')BirthMonth=BirthMonth.charAt(1);
   return BirthMonth;
-}
+};
 
 // 返回生日中的日，格式如下，10
 clsIDCard.prototype.GetBirthDay = function() {
   var BirthDay='';
   if(this.Valid)BirthDay=this.ID18.substr(12,2);
   return BirthDay;
-}
+};
 
 // 返回性别，1：男，0：女
 clsIDCard.prototype.GetSex = function() {
   var Sex='';
   if(this.Valid)Sex=this.ID18.charAt(16)%2;
   return Sex;
-}
+};
 
 // 返回15位身份证号码
 clsIDCard.prototype.Get15 = function() {
   var ID15='';
   if(this.Valid)ID15=this.ID15;
   return ID15;
-}
+};
 
 // 返回18位身份证号码
 clsIDCard.prototype.Get18 = function() {
   var ID18='';
   if(this.Valid)ID18=this.ID18;
   return ID18;
-}
+};
 
 // 返回所在省，例如：上海市、浙江省
 clsIDCard.prototype.GetLocal = function() {
   var Local='';
   if(this.Valid)Local=this.Local;
   return Local;
-}
+};
 
 clsIDCard.prototype.GetVCode = function(CardNo17) {
   var Wi = new Array(7,9,10,5,8,4,2,1,6,3,7,9,10,5,8,4,2,1);
@@ -114,7 +114,7 @@ clsIDCard.prototype.GetVCode = function(CardNo17) {
   for (var i=0; i<CardNo17.length; i++)cardNoSum+=CardNo17.charAt(i)*Wi[i];
   var seq = cardNoSum%11;
   return Ai[seq];
-}
+};
 
 clsIDCard.prototype.CheckValid = function(CardNo18) {
   if(this.GetVCode(CardNo18.substr(0,17))!=CardNo18.charAt(17))return false;
@@ -125,11 +125,11 @@ clsIDCard.prototype.CheckValid = function(CardNo18) {
   this.ID15=CardNo18.substr(0,6)+CardNo18.substr(8,9);
   this.Local=aCity[parseInt(CardNo18.substr(0,2))];
   return true;
-}
+};
 
 clsIDCard.prototype.IsDate = function(strDate) {
   var r = strDate.match(/^(\d{1,4})(\d{1,2})(\d{1,2})$/);
   if(r==null)return false;
   var d= new Date(r[1], r[2]-1, r[3]);
   return (d.getFullYear()==r[1]&&(d.getMonth()+1)==r[2]&&d.getDate()==r[3]);
-}
+};

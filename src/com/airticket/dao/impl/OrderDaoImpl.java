@@ -63,11 +63,11 @@ public class OrderDaoImpl extends BaseDao implements OrderDao {
 	 * (non-Javadoc)
 	 * @see com.airticket.dao.OrderDao#selectByOrder(com.airticket.bean.Order)
 	 */
-	public List<Order> selectByOrder(Order order) {
-		String hql = "";
+	public List<Order> selectByOrder(Order order,String... paramNames) {
+		String hql = this.getSelectHQL(order.getClass(), paramNames);
 		List<Order> orders = null;
 		try {
-			Query query = this.queryInfo(hql, order);
+			Query query = this.queryInfo(hql.toString(),order);
 			if(null!=query){
 				orders = query.list();
 			}
@@ -77,8 +77,6 @@ public class OrderDaoImpl extends BaseDao implements OrderDao {
 		}
 		return orders;
 	}
-	
-	
 	
 
 }

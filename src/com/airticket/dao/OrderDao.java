@@ -38,8 +38,9 @@ public interface OrderDao {
 	 * @param order 订单信息对象 
 	 * @return 响应对象集合
 	 */
-	public List<Order> selectByOrder(Order order);
+	public List<Order> selectByOrder(Order order,String... paramNames);
 	
+
 	
 
 	

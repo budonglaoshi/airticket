@@ -2,6 +2,8 @@ package com.airticket.web.action;
 
 
 import java.io.Serializable;
+import java.sql.Timestamp;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
 
@@ -13,6 +15,7 @@ import com.airticket.adapter.DataReceiver;
 import com.airticket.bean.Order;
 import com.airticket.bean.OrderPassenger;
 import com.airticket.bean.OrderTravelInvoices;
+import com.airticket.bean.RequestView;
 import com.airticket.bean.UntreatedOrder;
 import com.airticket.biz.IFlightSerchBiz;
 import com.airticket.biz.OrderBiz;
@@ -37,10 +40,12 @@ public class OrderAction extends ActionSupport {
 	private String order_json;
 	private String invoices_json;
 	
+	private UntreatedOrder order;
+	private RequestView view;
+	
 	public String save_order(){
 		// 将json字符串转换为对象
         try {
-        	
         	
         	//正常流程
         	// 未处理订单JSON转换对象
@@ -55,13 +60,9 @@ public class OrderAction extends ActionSupport {
             	untreatedOrder.setOrderTravelInvoices(orderTravelInvoices);
         	}
         	untreatedOrder.setOrderPassengers(new HashSet<OrderPassenger>(orderPassengers));
+        	untreatedOrder.setOrderDate(new Timestamp(new Date().getTime()));
         	//添加订单
         	Serializable orderId = orderBiz.saveByOrder(untreatedOrder);
-        	
-        	
-        	
-        	
-        	
         	//
         	if(null!=orderId){
         		ActionContext.getContext().put("untreatedOrder", untreatedOrder);
@@ -76,6 +77,18 @@ public class OrderAction extends ActionSupport {
 		}
         return NONE;
 	}
+	
+	
+	public String userOrders(){
+		if(null!=order&&!StaticData.EMPTY.equals(order.mobilePhone)){
+			List<Order> orders = orderBiz.selectUserOrders(order);
+			if(null!=orders&&0!=orders.size()){
+				ActionContext.getContext().put("orders", orders);
+			}
+		}
+		return SUCCESS;
+	}
+	
 	
 	/**
 	 * 获取用户ip
@@ -159,6 +172,24 @@ public class OrderAction extends ActionSupport {
 
 	public void setOrderBiz(OrderBiz orderBiz) {
 		this.orderBiz = orderBiz;
+	}
+
+
+	public UntreatedOrder getOrder() {
+		return order;
+	}
+	public void setOrder(UntreatedOrder order) {
+		this.order = order;
+	}
+
+
+	public RequestView getView() {
+		return view;
+	}
+
+
+	public void setView(RequestView view) {
+		this.view = view;
 	}
 
 }

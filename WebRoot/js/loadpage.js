@@ -9,13 +9,12 @@ function getUrlParam(name) {
 
 	function init(){
 		setup();
-		var jsonData = $.parseJSON(getUrlParam("params"));
-		var flightNo = jsonData['view.flightNo'];
-		var price = jsonData["view.price"];		
-		var flightClass = jsonData["view.flightClass"];		
-		var departCity = jsonData["view.departCity"];		
-		var arriveCity = jsonData["view.arriveCity"];		
-		var takeOffTime = jsonData["view.takeOffTime"];		
+		var flightNo = getUrlParam('view.flightNo');
+		var price = getUrlParam("view.price");		
+		var flightClass = getUrlParam("view.flightClass");		
+		var departCity = getUrlParam("view.departCity");		
+		var arriveCity = getUrlParam("view.arriveCity");		
+		var takeOffTime = getUrlParam("view.takeOffTime");	
 		
 		$("#orderInfo").append("<img alt='正在加载...' src='/airticket/image/load.gif'>");
 		
@@ -62,6 +61,15 @@ function getUrlParam(name) {
 					var price = orders.price;
 					
 					var craftTypeName = orders.craftInfo.craftTypeName;
+					
+					$("input[name='view.flightNo']").val(flightNo);
+					$("input[name='view.price']").val(price);
+					$("input[name='view.flightClass']").val(flightClass);
+					$("input[name='view.departCity']").val(DCityCode);
+					$("input[name='view.arriveCity']").val(ACityCode);
+					$("input[name='view.takeOffTime']").val(takeOffTime);
+					
+					alert($("input[name='view.flightNo']").val());
 					
 					
 					$("#orderInfo").append("<span>路线："+DCityName+"-"+ACityName+"</span><br />");
@@ -162,7 +170,7 @@ function getUrlParam(name) {
 						+"\"price\":\""+$("#localPrice").html()+"\","
 						+"\"contactName\":\""+$("#order_contactName").val()+"\","
 						+"\"mobilePhone\":\""+$("#order_mobilePhone").val()+"\","
-						+"\"statusid\":\"0\","
+						+"\"statusid\":\"W\","
 						+"\"contactEmail\":\""+$("#order_contactEmail").val()+"\"}";
 						
 						if($("#p_email").is(":checked")){

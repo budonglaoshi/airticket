@@ -30,12 +30,8 @@ public class SelectReserveInterceptor implements Interceptor {
 		String ip = this.getIpAddr(ServletActionContext.getRequest());
 		
 		ActionContext context = invocation.getInvocationContext().getContext();
-		
-		
 		List<ResponseView> reserveViews=(List<ResponseView>) MemcachedUtil.get(ip + "reserveViews");
-		
 		if(reserveViews!=null&&reserveViews.size()>0){
-			
 			context.put("reserveViews", reserveViews);
 			return invocation.invoke();
 		}

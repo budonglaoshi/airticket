@@ -127,11 +127,11 @@ public class BeingOrder extends Order implements Serializable {
 	}
 	
 	@Column(name = "statusid", nullable = false, length = 100)
-	public Integer getStatusid() {
+	public String getStatusid() {
 		return this.statusid;
 	}
 
-	public void setStatusid(Integer statusid) {
+	public void setStatusid(String statusid) {
 		this.statusid = statusid;
 	}
 
@@ -161,7 +161,17 @@ public class BeingOrder extends Order implements Serializable {
 	public void setContactEmail(String contactEmail) {
 		this.contactEmail = contactEmail;
 	}
-
+	
+	@Column(name="orderDate",nullable=false)
+	public Timestamp getOrderDate(){
+		return this.orderDate;
+	}
+	
+	
+	public void setOrderDate(Timestamp orderDate){
+		this.orderDate = orderDate;
+	}
+	
 	
 	//延迟加载：多对一方式
 		//关联信息：外键name = "category_id"
@@ -179,7 +189,7 @@ public class BeingOrder extends Order implements Serializable {
 		//延迟加载：fetch = FetchType.LAZY
 		//映射：mappedBy = "p1_untreated_order"
 		//一对多方式
-		 @OneToMany(fetch=FetchType.LAZY)  
+		@OneToMany(fetch=FetchType.LAZY,mappedBy="orderid")
 		 @JoinColumn(name="orderid")
 		public Set<OrderPassenger> getOrderPassengers(){
 			return this.orderPassengers;

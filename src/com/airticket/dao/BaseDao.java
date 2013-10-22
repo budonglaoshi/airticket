@@ -5,6 +5,8 @@ import java.io.Serializable;
 import org.hibernate.Query;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 
+import com.airticket.bean.OrderPassenger;
+
 /**
  * 
  * @author ALLEN
@@ -13,6 +15,22 @@ import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 public class BaseDao extends HibernateDaoSupport {
 
 
+	/**
+	 * 生成查询hql
+	 * @param clazz
+	 * @param paramNames
+	 * @return
+	 */
+	public String getSelectHQL(Class<?> clazz,String...paramNames){
+		StringBuilder hql = new StringBuilder("from "+clazz.getSimpleName()+" "+clazz.getSimpleName()+" where 1=1 ");
+		if(null!=paramNames&&0!=paramNames.length){
+			for (String paramName : paramNames) {
+				hql.append(" and "+clazz.getSimpleName()+"."+paramName+" =:"+paramName);
+			}
+		}
+		return hql.toString();
+	}
+	
 	
 	/**
 	 * 查询
